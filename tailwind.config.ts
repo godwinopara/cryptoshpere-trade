@@ -20,6 +20,9 @@ const config: Config = {
 			colors: {
 				darkBlue: "#12326B",
 			},
+			maxWidth: {
+				desktop: "1200px",
+			},
 		},
 	},
 	plugins: [],
