@@ -3,8 +3,8 @@ import heroImg from "public/images/homepage-hero-img.png";
 
 export default function Hero() {
 	return (
-		<div className="bg-homeHeroBg h-screen text-white">
-			<div className="grid grid-cols-2 items-center max-w-[1200px] mx-auto">
+		<div className="bg-homeHeroBg h-screen text-white pt-10">
+			<div className="grid grid-cols-2 items-center max-w-desktop mx-auto">
 				<div>
 					<div className="mb-12">
 						<h1 className="text-46 leading-56 font-extrabold mb-5">
