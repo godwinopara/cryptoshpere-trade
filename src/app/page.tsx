@@ -1,6 +1,7 @@
 import FairPricing from "@/components/home/FairPricing";
 import Features from "@/components/home/Features";
 import Hero from "@/components/home/Hero";
+import Meta from "@/components/home/Meta";
 import Plans from "@/components/home/Plans";
 import Reviews from "@/components/home/Reviews";
 import TradeWithUs from "@/components/home/TradeWithUs";
@@ -20,6 +21,7 @@ export default function Home() {
 			<TradeWithUs />
 			<Plans />
 			<Reviews />
+			<Meta />
 		</main>
 	);
 }
