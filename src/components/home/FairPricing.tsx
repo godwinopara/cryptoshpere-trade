@@ -10,7 +10,7 @@ export default function FairPricing() {
 				</div>
 
 				<div className="text-lg">
-					<h2 className="text-3xl font-bold mb-7">Better and fairer pricing and execution</h2>
+					<h2 className="text-4xl font-bold mb-7">Better and fairer pricing and execution</h2>
 					<p>
 						Universal Cryptosphere Trade aims to be the number retail Crypto Company in the world
 						for pricing and execution across all forex and metals. This is to say that your trades,
