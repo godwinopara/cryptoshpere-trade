@@ -27,7 +27,7 @@ export default function Plans() {
 						<h3 className="font-bold text-xl mb-5">Standard Account</h3>
 						<strong className="block mb-8">Leverage up to 500:1</strong>
 						<strong className="block mb-8">Spreads from 1.0 pips</strong>
-						<strong className="block mb-8">AU $3.00 Commission per side</strong>
+						<strong className="block mb-8">AU $0.00 Commission per side</strong>
 						<strong className="block mb-4">Available Base Currencies</strong>
 
 						<p className="mb-8">
