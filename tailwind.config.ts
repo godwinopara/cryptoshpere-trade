@@ -19,6 +19,7 @@ const config: Config = {
 			},
 			colors: {
 				darkBlue: "#12326B",
+				gray: "rgb(226, 229, 236)",
 			},
 			maxWidth: {
 				desktop: "1200px",
