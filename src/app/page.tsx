@@ -1,3 +1,4 @@
+import FairPricing from "@/components/home/FairPricing";
 import Features from "@/components/home/Features";
 import Hero from "@/components/home/Hero";
 import TradingOptions from "@/components/home/TradingOptions";
@@ -12,6 +13,7 @@ export default function Home() {
 			<Features />
 			<TradingOptions />
 			<WhyTradeCrypto />
+			<FairPricing />
 		</main>
 	);
 }

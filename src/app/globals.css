@@ -7,3 +7,7 @@
 body {
 	color: #091f2c;
 }
+
+.tradingview-widget-copyright {
+	display: none;
+}
