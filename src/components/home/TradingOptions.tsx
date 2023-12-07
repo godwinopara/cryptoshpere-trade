@@ -8,16 +8,16 @@ import commodities from "public/images/commodities.png";
 
 export default function TradingOptions() {
 	return (
-		<section className="bg-gray py-20">
+		<section className="bg-gray py-32">
 			<div className="max-w-desktop mx-auto text-center ">
 				<h2 className="text-4xl font-bold mb-10">One account. Over 600 opportunities to trade.</h2>
-				<p className="max-w-[60%] mx-auto leading-7 ">
+				<p className="max-w-[60%] mx-auto leading-7 text-lg">
 					Universal Cryptosphere Trade Insights lets you diversify your portfolio by investing in a
 					global selection of stocks, ETFs, Futures, carefully screened and curated into portfolios
 					just for you. Trade more than 600 products including Forex, Share CFDs, Commodities,
 					Indices, and Metals with Limitless Trade Ltd MetaTrader 4 & 5 trading platforms.
 				</p>
-				<div className="grid grid-cols-3 gap-10 mt-24">
+				<div className="grid grid-cols-3 gap-10 mt-28">
 					<TradingOptionsCard
 						img={forex}
 						title="Forex"
@@ -49,7 +49,7 @@ export default function TradingOptions() {
 						description="Avoid the complexities of a digital wallet, trade cryptocurrency from the same MT4 platform you use for trading"
 					/>
 					<TradingOptionsCard
-						img={forex}
+						img={commodities}
 						title="Commodities"
 						alt="diagram of commodity"
 						description="Trade one of the world’s most heavily-traded markets"
