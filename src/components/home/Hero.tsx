@@ -7,11 +7,11 @@ import { TickerTape } from "react-ts-tradingview-widgets";
 export default function Hero() {
 	return (
 		<>
-			<div className="bg-homeHeroBg h-screen text-white pt-10">
-				<div className="grid grid-cols-2 items-center max-w-desktop mx-auto">
-					<div>
-						<div className="mb-12">
-							<h1 className="text-46 leading-56 font-extrabold mb-5">
+			<div className="bg-homeHeroBg min-h-[120vh] bg-cover bg-center bg-darkBlue border border-green h-screen text-white pt-10">
+				<div className="min-h-screen px-6 lg:px-0 grid text-center lg:text-left lg:grid-cols-2 items-center max-w-desktop mx-auto">
+					<div className="mb-20 lg:mb-0">
+						<div className="mb-10">
+							<h1 className="text-4xl font-semibold lg:text-46 lg:leading-56 lg:font-extrabold mb-5">
 								A new way to explore the global markets
 							</h1>
 							<p className="text-lg mb-4">
@@ -21,10 +21,12 @@ export default function Hero() {
 							<p className="text-md">*Investment Trends worldwide Leverage Trading Report 2022.</p>
 						</div>
 						<div>
-							<button className="border-white border rounded-sm py-3 px-6 font-bold mr-5">
+							<button className="block w-full mb-2 lg:mb-0 lg:inline-block border-white border rounded-sm py-3 px-6 font-bold mr-5">
 								Login Now
 							</button>
-							<button className="bg-darkBlue py-3 px-6 font-bold rounded-sm">Open Account</button>
+							<button className="block w-full lg:inline-block bg-darkBlue py-3 px-6 font-bold rounded-sm">
+								Open Account
+							</button>
 						</div>
 					</div>
 					<div>

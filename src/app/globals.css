@@ -8,6 +8,12 @@ body {
 	color: #091f2c;
 }
 
+ul,
+li,
+a {
+	text-decoration: none;
+}
+
 .tradingview-widget-copyright {
 	display: none;
 }
