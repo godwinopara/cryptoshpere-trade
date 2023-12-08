@@ -178,31 +178,31 @@ export default function TradeWithUs() {
 					</p>
 				</div>
 				<div>
-					<div>
+					<div className="flex items-center">
 						<span className="mr-2">
 							<FaCheck />
 						</span>
 						No digital wallet
 					</div>
-					<div>
+					<div className="flex items-center">
 						<span className="mr-2">
 							<FaCheck />
 						</span>
 						Low commission
 					</div>
-					<div>
+					<div className="flex items-center">
 						<span className="mr-2">
 							<FaCheck />
 						</span>
 						Leveraged crypto trading
 					</div>
-					<div>
+					<div className="flex items-center">
 						<span className="mr-2">
 							<FaCheck />
 						</span>
 						Competitive cryptocurrency spreads
 					</div>
-					<div>
+					<div className="flex items-center">
 						<span className="mr-2">
 							<FaCheck />
 						</span>
