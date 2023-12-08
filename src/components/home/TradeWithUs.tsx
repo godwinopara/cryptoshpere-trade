@@ -1,6 +1,7 @@
 "use client";
 
 import { MarketOverview } from "react-ts-tradingview-widgets";
+import { FaCheck } from "react-icons/fa6";
 
 export default function TradeWithUs() {
 	const tabs = [
@@ -156,7 +157,7 @@ export default function TradeWithUs() {
 				<div className="mb-10">
 					<h2 className="text-4xl font-bold mb-8">Trade with a globally recognised broker</h2>
 					<p>
-						We have 23 years' experience in financial trading and offer pricing on a range of global
+						We have 23 years experience in financial trading and offer pricing on a range of global
 						CFD instruments. Trade the UK 100 from 0.8 points, Germany 30 from 0.9 points, EUR/USD
 						from 0.6 and EUR/GBP from 0.8 pips, with depth of market available on all our forex
 						pairs.
@@ -171,26 +172,41 @@ export default function TradeWithUs() {
 					<p>
 						By making significant investments in world-leading technology, we can actively manage
 						the path your trade takes through the Internet, ensuring your trade takes the least
-						congested – and therefore fastest – route every time. Combined with the ability to speed
-						up the client-side of your MT4 platform, when you execute with Limitless Trade Ltd you
-						can be confident your trade will be delivered faster than with typical ECN technologies.
+						congested and therefore fastest route every time. Combined with the ability to speed up
+						the client-side of your MT4 platform, when you execute with Limitless Trade Ltd you can
+						be confident your trade will be delivered faster than with typical ECN technologies.
 					</p>
 				</div>
 				<div>
 					<div>
-						<span className="mr-2">&#10004;</span> No digital wallet
+						<span className="mr-2">
+							<FaCheck />
+						</span>
+						No digital wallet
 					</div>
 					<div>
-						<span className="mr-2">&#10004;</span> Low commission
+						<span className="mr-2">
+							<FaCheck />
+						</span>
+						Low commission
 					</div>
 					<div>
-						<span className="mr-2">&#10004; </span> Leveraged crypto trading
+						<span className="mr-2">
+							<FaCheck />
+						</span>
+						Leveraged crypto trading
 					</div>
 					<div>
-						<span className="mr-2">&#10004; </span> Competitive cryptocurrency spreads
+						<span className="mr-2">
+							<FaCheck />
+						</span>
+						Competitive cryptocurrency spreads
 					</div>
 					<div>
-						<span className="mr-2">&#10004; </span> All trading strategies and styles allowed
+						<span className="mr-2">
+							<FaCheck />
+						</span>
+						All trading strategies and styles allowed
 					</div>
 				</div>
 			</div>

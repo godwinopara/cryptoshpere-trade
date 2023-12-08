@@ -11,7 +11,7 @@ export default function Navbar() {
 				<ul className="flex items-center gap-5">
 					<li className="relative account">
 						<Link href="/account">Accounts</Link>
-						<ul className="account__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px]">
+						<ul className="account__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px] transition">
 							<li>
 								<Link href="/compareaccount">Compare Our Account</Link>
 							</li>
@@ -116,7 +116,7 @@ export default function Navbar() {
 						<Link href="/news">News & Education</Link>
 						<ul className="news__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px]">
 							<li>
-								<a href="news-analysis/index.html">News &#038; Analysis</a>
+								<a href="news-analysis/index.html">News & Analysis</a>
 							</li>
 							<li>
 								<a href="education-hub/index.html">Education Hub</a>
