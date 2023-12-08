@@ -11,3 +11,36 @@ body {
 .tradingview-widget-copyright {
 	display: none;
 }
+
+.account__sub,
+.about__sub,
+.trading__sub,
+.platform__sub,
+.tools__sub,
+.news__sub {
+	display: none;
+}
+
+.account:hover > .account__sub {
+	display: flex;
+}
+
+.about:hover .about__sub {
+	display: flex;
+}
+
+.trading:hover .trading__sub {
+	display: flex;
+}
+
+.platform:hover .platform__sub {
+	display: flex;
+}
+
+.tools:hover .tools__sub {
+	display: flex;
+}
+
+.news:hover .news__sub {
+	display: flex;
+}
