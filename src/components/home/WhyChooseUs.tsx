@@ -8,17 +8,19 @@ import support from "public/images/support.png";
 
 export default function WhyChooseUs() {
 	return (
-		<section className="max-w-desktop mx-auto py-28">
+		<section className="max-w-desktop mx-auto px-3 lg:px-0 py-28">
 			<div className="text-center">
-				<h2 className="text-4xl font-extrabold mb-10">Why trade with Limitless Trade Ltd?</h2>
-				<p className="max-w-[70%] mx-auto leading-7 mb-20 text-lg">
+				<h2 className="text-3xl font-semibold lg:text-4xl lg:font-extrabold mb-10">
+					Why trade with Limitless Trade Ltd?
+				</h2>
+				<p className="lg:max-w-[70%] mx-auto leading-7 mb-20 text-lg">
 					Universal Cryptosphere Trade is not fully automated. We have human discretionary traders
 					and we do make hedge execution decisions based on client trading behaviour or account
 					profitability. Over 600 products, tight spreads, transparent pricing, powerful platforms.
 					Backed by unmatched support.
 				</p>
 			</div>
-			<div className="flex items-center justify-between w-[90%] mx-auto">
+			<div className="grid grid-cols-2 gap-3 lg:flex items-center justify-between w-[90%] mx-auto">
 				<WCUCard img={portfolio} text="Multi Portfolio" />
 				<WCUCard img={broker} text="Regulated Broker" />
 				<WCUCard img={funds} text="Safe Client Funds" />
