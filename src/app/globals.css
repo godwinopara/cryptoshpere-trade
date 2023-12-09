@@ -1,6 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 @tailwind base;
+
+@layer base {
+	html {
+		@apply text-[#4f4f4f];
+	}
+	html.dark {
+		@apply text-neutral-50;
+		@apply bg-neutral-800;
+	}
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -27,8 +37,12 @@ a {
 	display: none;
 }
 
-.account:hover > .account__sub {
+.account:hover .account__sub {
 	display: flex;
+}
+
+.account:hover {
+	background: #000;
 }
 
 .about:hover .about__sub {

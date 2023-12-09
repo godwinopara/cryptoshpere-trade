@@ -2,14 +2,16 @@ import Link from "next/link";
 
 export default function DesktopNav() {
 	return (
-		<nav className="hidden lg:block bg-darkBlue text-white py-5">
+		<nav className="hidden lg:block bg-darkBlue text-white py-5 px-4 xl:px-0">
 			<div className="flex justify-between items-center max-w-desktop mx-auto">
-				<Link className="font-extrabold uppercase" href="/">
+				<Link className="font-extrabold uppercase text-sm xl:text-base" href="/">
 					Universal Cryptosphere Trade
 				</Link>
 				<ul className="flex items-center gap-5">
 					<li className="relative account">
-						<Link href="/account">Accounts</Link>
+						<Link className="text-sm" href="#">
+							Accounts
+						</Link>
 						<ul className="account__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px] transition">
 							<li>
 								<Link href="/compareaccount">Compare Our Account</Link>
@@ -29,24 +31,28 @@ export default function DesktopNav() {
 						</ul>
 					</li>
 					<li className="relative about">
-						<Link href="/about">About</Link>
+						<Link className="text-sm" href="/about">
+							About
+						</Link>
 						<ul className="about__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px]">
 							<li>
-								<a href="about-go-markets/index.html">About Us</a>
+								<Link href="about-go-markets/index.html">About Us</Link>
 							</li>
 							<li>
-								<a href="chelseafc/index.html">Chelsea FC Partnership</a>
+								<Link href="chelseafc/index.html">Chelsea FC Partnership</Link>
 							</li>
 							<li>
-								<a href="chelseafc/index.html">Legal Documents</a>
+								<Link href="chelseafc/index.html">Legal Documents</Link>
 							</li>
 							<li>
-								<a href="contact-us/index.html">Contact Us</a>
+								<Link href="contact-us/index.html">Contact Us</Link>
 							</li>
 						</ul>
 					</li>
 					<li className="relative trading">
-						<Link href="/trading">Trading</Link>
+						<Link className="text-sm" href="/trading">
+							Trading
+						</Link>
 						<ul className="absolute trading__sub  left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px]">
 							<li>
 								<Link href="/product">Product overview</Link>
@@ -69,7 +75,9 @@ export default function DesktopNav() {
 						</ul>
 					</li>
 					<li className="relative platform">
-						<Link href="/platforms">Platforms</Link>
+						<Link className="text-sm" href="/platforms">
+							Platforms
+						</Link>
 						<ul className="platform__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px]">
 							<li>
 								<a href="platforms/index.html">Platforms Overview</a>
@@ -89,7 +97,9 @@ export default function DesktopNav() {
 						</ul>
 					</li>
 					<li className="relative tools">
-						<Link href="/tools">Tools</Link>
+						<Link className="text-sm" href="/tools">
+							Tools
+						</Link>
 						<ul className="tools__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px]">
 							<li>
 								<a href="/autochartist">Autochartist</a>
@@ -112,7 +122,9 @@ export default function DesktopNav() {
 						</ul>
 					</li>
 					<li className="relative news">
-						<Link href="/news">News & Education</Link>
+						<Link className="text-sm" href="/news">
+							News & Education
+						</Link>
 						<ul className="news__sub absolute left-0 top-5 py-4 px-5 flex flex-col gap-3 bg-darkBlue min-w-[300px]">
 							<li>
 								<a href="news-analysis/index.html">News & Analysis</a>

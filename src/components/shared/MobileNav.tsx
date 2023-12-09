@@ -1,154 +1,270 @@
 "use client";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
-import { Accordion } from "react-bootstrap";
 import hamburger from "public/images/hamburger.svg";
 import Image from "next/image";
 import Button from "./Button";
-
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { useEffect } from "react";
 
 export default function MobileNav() {
+	useEffect(() => {
+		const init = async () => {
+			const { Collapse, Dropdown, Ripple, initTE } = await import("tw-elements");
+			initTE({ Collapse, Dropdown, Ripple });
+		};
+		init();
+	}, []);
+
 	return (
-		<Navbar expand="md" className="bg-darkBlue">
-			<Container>
-				<Navbar.Brand href="#home" className="text-white fs-6 uppercase">
-					Universal Cryptosphere Trade
-				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav">
-					<Image
-						src={hamburger}
-						alt="hamburger icon"
-						className="cursor-pointer"
-						aria-controls="basic-navbar-nav"
-					/>
-				</Navbar.Toggle>
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto">
-						<Nav.Link href="#home" className="text-white">
-							Home
-						</Nav.Link>
-						<Nav.Link href="#link" className="text-white">
-							Link
-						</Nav.Link>
-						<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-						</NavDropdown>
-					</Nav>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
-		// <nav>
-		// 	<div className="px-3 bg-darkBlue flex items-center justify-between py-6">
-		// 		<Link className="no-underline text-white uppercase text-sm" href="/">
-		// 			Universal Cryptosphere Trade
-		// 		</Link>
+		// <!-- Main navigation container -->
+		<nav
+			className="relative flex w-full flex-nowrap items-center justify-between bg-darkBlue py-2 text-white shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 lg:hidden"
+			data-te-navbar-ref
+		>
+			<div className="flex w-full flex-wrap items-center justify-between px-3">
+				<div className="flex w-full justify-between items-center py-3 ">
+					<div className="ml-2">
+						<a className="text-sm text-white" href="#">
+							Universal Cryptosphere Trade
+						</a>
+					</div>
+					{/* <!-- Hamburger button for mobile view --> */}
+					<button
+						className="block border-0 bg-transparent px-2 text-white hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+						type="button"
+						data-te-collapse-init
+						data-te-target="#navbarSupportedContent2"
+						aria-controls="navbarSupportedContent2"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						{/* <!-- Hamburger icon --> */}
+						<span className="[&>svg]:w-7">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								className="h-7 w-7"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</span>
+					</button>
+				</div>
 
-		// 		<div>
-		// 			<Image src={hamburger} alt="hamburger icon" className="cursor-pointer" />
-		// 		</div>
-		// 	</div>
-		// 	<div>
-		// 		<div className="px-3 py-10 bg-darkBlue">
-		// 			<Button btnText="Log In" className="w-full border border-white text-white" />
-		// 			<Button btnText="Open CFD Account" className="w-full text-white" />
-		// 		</div>
+				{/* <!-- Collapsible navbar container --> */}
+				<div
+					className="!visible pb-10 mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+					id="navbarSupportedContent2"
+					data-te-collapse-item
+				>
+					{/* Auth btn */}
+					<div className="mb-5">
+						<Button btnText="Log in" className="w-full border border-white mb-4 mt-6" />
+						<Button btnText="Open CFD Account" className="w-full" />
+					</div>
+					{/* <!-- Left links --> */}
+					<ul
+						className="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
+						data-te-navbar-nav-ref
+					>
+						{/* <!-- Home link --> */}
+						<Link
+							className="inline-block px-2  pb-2 pt-2.5  font-medium  text-white transition duration-150 ease-in-out"
+							data-te-collapse-init
+							data-te-ripple-init
+							data-te-ripple-color="light"
+							href="#collapseExample"
+							role="button"
+							aria-expanded="false"
+							aria-controls="collapseExample"
+						>
+							Account
+						</Link>
 
-		// 		<Accordion>
-		// 			<Accordion.Item eventKey="0">
-		// 				<Accordion.Header>Account</Accordion.Header>
-		// 				<Accordion.Body className="bg-darkBlue">
-		// 					<ul>
-		// 						<NavLink href="/account" text="Compare Our Account" />
-		// 						<NavLink href="/accountfunding" text="Account Funding / Withdrawal" />
-		// 						<NavLink href="/spreads" text="Spreads" />
-		// 						<NavLink href="/referral" text="Referral Program" />
-		// 						<NavLink href="/affiliate" text="Affiliate" />
-		// 					</ul>
-		// 				</Accordion.Body>
-		// 			</Accordion.Item>
-		// 			<Accordion.Item eventKey="1">
-		// 				<Accordion.Header>About</Accordion.Header>
-		// 				<Accordion.Body className="bg-darkBlue">
-		// 					<ul>
-		// 						<NavLink href="/about" text="About Us" />
-		// 						<NavLink href="/document" text="Chelsea FC Partnership" />
-		// 						<NavLink href="/document" text="Legal Documents" />
-		// 						<NavLink href="/contact" text="Contact Us" />
-		// 					</ul>
-		// 				</Accordion.Body>
-		// 			</Accordion.Item>
-		// 			<Accordion.Item eventKey="2">
-		// 				<Accordion.Header>Trading</Accordion.Header>
-		// 				<Accordion.Body className="bg-darkBlue">
-		// 					<ul>
-		// 						<NavLink href="/product" text="Product Overview" />
-		// 						<NavLink href="/forex-cfds" text="Forex CFDs" />
-		// 						<NavLink href="/share-cfds" text="Share CFDs" />
-		// 						<NavLink href="/index-cfds" text="Index CFDs" />
-		// 						<NavLink href="/metal-cfds" text="Metal CFDs" />
-		// 						<NavLink href="/commodity-cfds" text="Commodity CFDs" />
-		// 					</ul>
-		// 				</Accordion.Body>
-		// 			</Accordion.Item>
-		// 			<Accordion.Item eventKey="3">
-		// 				<Accordion.Header>Platforms</Accordion.Header>
-		// 				<Accordion.Body className="bg-darkBlue">
-		// 					<ul>
-		// 						<NavLink href="/platforms" text="Platforms Overviews" />
-		// 						<NavLink href="/metatrader-4" text="MetaTrader 4" />
-		// 						<NavLink href="/metatrader-5" text="MetaTrader 5" />
-		// 						<NavLink href="/mobile-trading" text="Mobile Trading Platforms" />
-		// 					</ul>
-		// 				</Accordion.Body>
-		// 			</Accordion.Item>
-		// 			<Accordion.Item eventKey="4">
-		// 				<Accordion.Header>Tools</Accordion.Header>
-		// 				<Accordion.Body className="bg-darkBlue">
-		// 					<ul>
-		// 						<NavLink href="/autochartist" text="Autochartist" />
-		// 						<NavLink href="/mt4-genesis" text="Genesis" />
-		// 						<NavLink href="/vps" text="VPS" />
-		// 						<NavLink href="go-trading-central" text="Trading Central" />
-		// 						<NavLink href="/a-quant-daily" text="a-Quant" />
-		// 						<NavLink href="/myfxbook" text="MyFxbook" />
-		// 					</ul>
-		// 				</Accordion.Body>
-		// 			</Accordion.Item>
-		// 			<Accordion.Item eventKey="5">
-		// 				<Accordion.Header>News & Education</Accordion.Header>
-		// 				<Accordion.Body className="bg-darkBlue">
-		// 					<ul>
-		// 						<NavLink href="/new-analysis" text="News & Analysis" />
-		// 						<NavLink href="/education" text="Education Hub" />
-		// 						<NavLink href="/economic" text="Economic Calendar" />
-		// 					</ul>
-		// 				</Accordion.Body>
-		// 			</Accordion.Item>
-		// 		</Accordion>
-		// 	</div>
-		// </nav>
+						<ul
+							className="!visible hidden px-8 py-4 bg-midblue"
+							id="collapseExample"
+							data-te-collapse-item
+						>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/compareaccount">Compare Our Account</Link>
+							</li>
+							<li className="block rounded-lg p-2">
+								<Link href="/accountfunding">Account Funding / Withdrawal</Link>
+							</li>
+							<li className="block rounded-lg p-2">
+								<Link href="/spread">Spreads</Link>
+							</li>
+							<li className="block rounded-lg p-2">
+								<Link href="/referral">Referral Program</Link>
+							</li>
+							<li className="block rounded-lg p-2">
+								<Link href="/affiliate">Affiliate</Link>
+							</li>
+						</ul>
+
+						{/* ============== About =============== */}
+						<Link
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							data-te-collapse-init
+							data-te-ripple-init
+							href="#abt"
+							role="button"
+							aria-expanded="false"
+							aria-controls="abt"
+						>
+							About
+						</Link>
+
+						<ul className="!visible hidden px-8 py-4 bg-midblue" id="abt" data-te-collapse-item>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="about-go-markets/index.html">About Us</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="chelseafc/index.html">Chelsea FC Partnership</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="chelseafc/index.html">Legal Documents</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="contact-us/index.html">Contact Us</Link>
+							</li>
+						</ul>
+						{/* ============== Trading =============== */}
+						<Link
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							data-te-collapse-init
+							data-te-ripple-init
+							href="#trading"
+							role="button"
+							aria-expanded="false"
+							aria-controls="trading"
+						>
+							Trading
+						</Link>
+
+						<ul className="!visible hidden px-8 py-4 bg-midblue" id="trading" data-te-collapse-item>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/product">Product overview</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/forex-cfd">Forex CFDs</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/share-cfds-trading">Share CFDs</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/index-trading-cfds">Index CFDs</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/cfd-gold-silver">Metal CFDs</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/commodity-cfd-trading">Commodity CFDs</Link>
+							</li>
+						</ul>
+						{/* ============== Platform =============== */}
+						<Link
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							data-te-collapse-init
+							data-te-ripple-init
+							href="#platform"
+							role="button"
+							aria-expanded="false"
+							aria-controls="platform"
+						>
+							Platform
+						</Link>
+
+						<ul
+							className="!visible hidden px-8 py-4 bg-midblue"
+							id="platform"
+							data-te-collapse-item
+						>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/product">Product overview</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="platforms/index.html">Platforms Overview</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="metatrader-4/index.html">MetaTrader 4</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="metatrader-5/index.html">MetaTrader 5</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="mobile-trading-platforms/index.html">Mobile trading platforms</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="https://app.lesslimittrade.com/">WebTrader</a>
+							</li>
+						</ul>
+						{/* ============== Tools =============== */}
+						<Link
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							data-te-collapse-init
+							data-te-ripple-init
+							href="#tools"
+							role="button"
+							aria-expanded="false"
+							aria-controls="tools"
+						>
+							Tools
+						</Link>
+
+						<ul className="!visible hidden px-8 py-4 bg-midblue" id="tools" data-te-collapse-item>
+							<li className="block rounded-lg p-2 text-sm">
+								<Link href="/product">Product overview</Link>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="platforms/index.html">Platforms Overview</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="metatrader-4/index.html">MetaTrader 4</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="metatrader-5/index.html">MetaTrader 5</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="mobile-trading-platforms/index.html">Mobile trading platforms</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="https://app.lesslimittrade.com/">WebTrader</a>
+							</li>
+						</ul>
+						{/* ============== News and Education =============== */}
+						<Link
+							className="inline-block px-2  pb-2 pt-2.5 font-medium text-white transition duration-150 ease-in-out"
+							data-te-collapse-init
+							data-te-ripple-init
+							href="#news"
+							role="button"
+							aria-expanded="false"
+							aria-controls="news"
+						>
+							News & Education
+						</Link>
+
+						<ul className="!visible hidden px-8 py-4 bg-midblue" id="news" data-te-collapse-item>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="news-analysis/index.html">News & Analysis</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="education-hub/index.html">Education Hub</a>
+							</li>
+							<li className="block rounded-lg p-2 text-sm">
+								<a href="economic-calendar/index.html">Economic Calendar</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	);
 }
-
-interface NavLinkProps {
-	href: string;
-	text: string;
-}
-
-const NavLink = ({ href, text }: NavLinkProps) => {
-	return (
-		<li>
-			<Link href={href} className="no-underline text-white mb-2 block">
-				{text}
-			</Link>
-		</li>
-	);
-};

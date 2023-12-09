@@ -152,10 +152,12 @@ export default function TradeWithUs() {
 	];
 
 	return (
-		<section className="grid grid-cols-2 max-w-desktop mx-auto gap-28 py-24">
-			<div>
+		<section className="px-4 lg:grid grid-cols-2 max-w-desktop mx-auto gap-28 py-24">
+			<div className="mb-20 lg:mb-0">
 				<div className="mb-10">
-					<h2 className="text-4xl font-bold mb-8">Trade with a globally recognised broker</h2>
+					<h2 className="text-3xl text-center lg:text-left lg:text-4xl font-bold mb-8">
+						Trade with a globally recognised broker
+					</h2>
 					<p>
 						We have 23 years experience in financial trading and offer pricing on a range of global
 						CFD instruments. Trade the UK 100 from 0.8 points, Germany 30 from 0.9 points, EUR/USD

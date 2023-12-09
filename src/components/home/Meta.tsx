@@ -4,22 +4,22 @@ import meta from "public/images/metatrader.jpg";
 
 export default function Meta() {
 	return (
-		<section className="bg-gray py-20">
-			<div className="max-w-desktop mx-auto grid grid-cols-2 items-center gap-20">
+		<section className="bg-gray py-20 px-4 lg:px-0">
+			<div className="max-w-desktop mx-auto grid lg:grid-cols-2 items-center gap-20">
 				<div>
 					<Image src={meta} alt="meta trader image" />
 				</div>
 				<div>
-					<h2 className="font-extrabold text-4xl mb-8">
+					<h2 className="font-extrabold text-3xl text-center lg:text-left lg:text-4xl mb-8">
 						Platform power: MetaTrader 4 and MetaTrader 5
 					</h2>
-					<p className="mb-8">
+					<p className="mb-8 text-lg">
 						We’re one of Australia’s first MetaTrader brokers. Our expertise helps you intuitively
 						execute trading strategies on market-leading platforms.
 					</p>
 
-					<div className="grid grid-cols-2">
-						<div>
+					<div className="lg:grid grid-cols-2">
+						<div className="mb-8 lg:mb-0">
 							<h3 className="text-xl font-extrabold mb-5">Trading Platforms</h3>
 							<ul className="flex flex-col gap-5 text-lg">
 								<li>

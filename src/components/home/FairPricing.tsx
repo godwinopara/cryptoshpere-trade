@@ -3,14 +3,16 @@ import fairPricingImg from "public/images/pricing-execution.png";
 
 export default function FairPricing() {
 	return (
-		<section className="bg-gray py-24">
-			<div className="max-w-desktop mx-auto grid grid-cols-2 gap-20 items-center">
+		<section className="bg-gray py-24 px-4 lg:px-0">
+			<div className="max-w-desktop mx-auto grid lg:grid-cols-2 lg:gap-20 items-center">
 				<div>
 					<Image src={fairPricingImg} alt="Laptop diagram" />
 				</div>
 
 				<div className="text-lg">
-					<h2 className="text-4xl font-bold mb-7">Better and fairer pricing and execution</h2>
+					<h2 className="text-3xl lg:text-4xl font-bold mb-7">
+						Better and fairer pricing and execution
+					</h2>
 					<p>
 						Universal Cryptosphere Trade aims to be the number retail Crypto Company in the world
 						for pricing and execution across all forex and metals. This is to say that your trades,

@@ -5,14 +5,14 @@ export default function Footer() {
 	const loggedIn = false;
 
 	return (
-		<footer className="bg-darkBlue text-white py-20">
+		<footer className="bg-darkBlue text-white py-20 px-6 lg:px-0">
 			<div className="max-w-desktop mx-auto">
-				<Link href="/" className="uppercase text-2xl pb-10 block font-bold">
+				<Link href="/" className="uppercase text-xl pb-10 block font-bold lg:text-2xl">
 					Universal Cryptosphere Trade
 				</Link>
 				<hr />
 
-				<div className="grid grid-cols-4 py-10 text-sm">
+				<div className="grid lg:grid-cols-4 gap-10 py-10 text-sm lg:gap-0 ">
 					<div>
 						<h3 className="font-bold mb-2">CALL US</h3>
 						<h4 className="font-semibold mb-1">International</h4>
