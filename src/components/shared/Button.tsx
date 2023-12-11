@@ -4,5 +4,9 @@ interface ButtonProps {
 }
 
 export default function Button({ className, btnText }: ButtonProps) {
-	return <button className={`py-3 px-6 font-bold rounded-sm ${className}`}>{btnText}</button>;
+	return (
+		<button className={`py-3 px-5 font-bold rounded-[100px] text-center ${className}`}>
+			{btnText}
+		</button>
+	);
 }

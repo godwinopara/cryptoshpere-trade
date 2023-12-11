@@ -4,79 +4,112 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from "react
 export default function Footer() {
 	const loggedIn = false;
 
-	return (
-		<footer className="bg-darkBlue text-white py-20 px-6 lg:px-0">
-			<div className="max-w-desktop mx-auto">
-				<Link href="/" className="uppercase text-xl pb-10 block font-bold lg:text-2xl">
-					Universal Cryptosphere Trade
-				</Link>
-				<hr />
+	const accountSubLinks = [
+		{ link: "/compareaccount", text: "Compare Our Account" },
+		{ link: "/accountfunding", text: "Account Funding / Withdrawal" },
+		{ link: "/spread", text: "Spreads" },
+		{ link: "/referral", text: "Referral Program" },
+		{ link: "/affiliate", text: "Affiliate" },
+		{ link: "/support", text: "Quick Support" },
+		{ link: "/holiday-trading", text: "Holiday Trading Hour" },
+	];
 
-				<div className="grid lg:grid-cols-4 gap-10 py-10 text-sm lg:gap-0 ">
-					<div>
-						<h3 className="font-bold mb-2">CALL US</h3>
-						<h4 className="font-semibold mb-1">International</h4>
-						<p>{loggedIn ? "+1 658-689-5678" : "[Premium Users]"}</p>
-					</div>
-					<div>
-						<div>
-							<h3 className="font-bold mb-2">CONTACT US</h3>
-							<div className="mb-4">
-								<h4 className="font-semibold mb-1">Customer Support</h4>
-								<p>info@lesslimittrade.com</p>
+	const aboutSubLinks = [
+		{ link: "/about", text: "About Us" },
+		{ link: "/document", text: "Legal Documents" },
+		{ link: "/contact", text: "Contact Us" },
+		{ link: "/privacy-policy", text: "Privacy Policy" },
+		{ link: "/terms", text: "Terms and Condition" },
+		{ link: "/statements", text: "Disclosure Statements" },
+	];
+
+	const tradingSubLinks = [
+		{ link: "/product", text: "Product Overview" },
+		{ link: "/forex", text: "Forex CFDs" },
+		{ link: "/share", text: "Share CFDs" },
+		{ link: "/index", text: "Index CFDs" },
+		{ link: "/metal", text: "Metal CFDs" },
+		{ link: "/commodity", text: "Commodity CFDs" },
+	];
+	const platformSubLinks = [
+		{ link: "/platforms", text: "Platforms Overview" },
+		{ link: "/metatrader4", text: "MetaTrader 4" },
+		{ link: "/metatrader5", text: "MetaTrader 5" },
+		{ link: "/mobile-trading", text: "Mobile trading platforms" },
+		{ link: "/webtrader", text: "Web Trader" },
+	];
+	const toolsSubLinks = [
+		{ link: "/autochartist", text: "Autochartist" },
+		{ link: "genesis", text: "Genesis" },
+		{ link: "/vps", text: "VPS" },
+		{ link: "/trading-central", text: "Trading Central" },
+		{ link: "/a-quant", text: "A-Quant" },
+		{ link: "/fxbook", text: "MyFxBook" },
+	];
+	const newsSubLinks = [
+		{ link: "/news-analysis", text: "News & Analysis" },
+		{ link: "/education-hub", text: "Education Hub" },
+		{ link: "/economic-calendar", text: "Economic Calendar" },
+	];
+
+	const legaDocumentLinks = [{ link: "/" }];
+
+	return (
+		<footer className="bg-black4 text-white py-20 px-6 lg:px-0">
+			<div className="max-w-desktop mx-auto">
+				<div className="flex justify-between">
+					<div className="w-[47%]">
+						<Link href="/" className="uppercase text-xl pb-5 block font-bold lg:text-xl">
+							Universal Cryptosphere Trade
+						</Link>
+						<div className="flex items-center gap-5 pb-10 text-xl ">
+							<div className="flex items-center justify-center rounded-[50%] h-10 w-10 bg-green">
+								<Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+									<FaFacebook />
+								</Link>
+							</div>
+							<div className="flex items-center justify-center rounded-[50%] h-10 w-10 bg-green">
+								<Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+									<FaTwitter />
+								</Link>
+							</div>
+							<div className="flex items-center justify-center rounded-[50%] h-10 w-10 bg-green">
+								<Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+									<FaLinkedin />
+								</Link>
+							</div>
+							<div className="flex items-center justify-center rounded-[50%] h-10 w-10 bg-green">
+								<Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+									<FaYoutube />
+								</Link>
+							</div>
+							<div className="flex items-center justify-center rounded-[50%] h-10 w-10 bg-green">
+								<Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+									<FaInstagram />
+								</Link>
 							</div>
 						</div>
-						<div className="mb-4">
-							<h3 className="font-semibold mb-1">New Accounts</h3>
-							<p>account@lesslimittrade.com</p>
+						<div>
+							<p className="w-[60%]">
+								This website is owned and operated by <br />
+								Universal Cryptosphere Trade. All rights reserved. <br /> <br />© 2023 Universal
+								Cryptosphere Trade (MU).
+							</p>
 						</div>
 					</div>
-					<div>
-						<h3 className="font-bold mb-3">LEGAL DOCUMENTS</h3>
-						<ul>
-							<li className="mb-1">
-								<Link href="privacy">Privacy Policy</Link>
-							</li>
-							<li className="mb-1">
-								<Link href="privacy">Terms and Conditions</Link>
-							</li>
-							<li>
-								<Link href="privacy">Disclosure Statement</Link>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<h3 className="font-bold mb-3">CLIENTS</h3>
-						<ul>
-							<li className="mb-1">
-								<Link href="privacy">Quick Support </Link>
-							</li>
-							<li>
-								<Link href="privacy"></Link>Holiday Trading Hours
-							</li>
-						</ul>
+
+					<div className="grid lg:flex justify-between flex-wrap pb-10 text-sm lg:gap-5 xl:text-base flex-1">
+						<FooterNavWrapper title="Account" links={accountSubLinks} />
+						<FooterNavWrapper title="About" links={aboutSubLinks} />
+						<FooterNavWrapper title="Trading" links={tradingSubLinks} />
+						<FooterNavWrapper title="Platforms" links={platformSubLinks} />
+						<FooterNavWrapper title="Tools" links={toolsSubLinks} />
+						<FooterNavWrapper title="News & Education" links={newsSubLinks} />
 					</div>
 				</div>
 				<hr />
 
-				<div className="text-xs pt-10 pb-10">
-					<div className="flex justify-end gap-2 pb-10">
-						<Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-							<FaFacebook />
-						</Link>
-						<Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-							<FaTwitter />
-						</Link>
-						<Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-							<FaLinkedin />
-						</Link>
-						<Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-							<FaYoutube />
-						</Link>
-						<Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-							<FaInstagram />
-						</Link>
-					</div>
+				<div className="text-sm pt-10 pb-10 italic">
 					<p>
 						Trading derivatives and leveraged products carries a high level of risk, including the
 						risk of losing substantially more than your initial investment. It is not suitable for
@@ -100,12 +133,32 @@ export default function Footer() {
 						bottom of any page of our website.
 					</p>
 					<br />
-					<p>
-						This website is owned and operated by Limitless Trade Ltd. All contents © 2021 Limitless
-						Trade Ltd Pty Ltd (MU). All rights reserved.
-					</p>
 				</div>
 			</div>
 		</footer>
 	);
 }
+
+interface FooterNavWrapperProps {
+	links: { link: string; text: string }[];
+	title: string;
+}
+
+const FooterNavWrapper = ({ links, title }: FooterNavWrapperProps) => {
+	return (
+		<div className="flex">
+			<div>
+				<h3 className="font-bold mb-3">{title}</h3>
+				<ul>
+					{links.map((sublink, id) => {
+						return (
+							<li key={id} className="mb-1">
+								<Link href={sublink.link}>{sublink.text}</Link>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+		</div>
+	);
+};

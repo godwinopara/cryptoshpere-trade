@@ -8,18 +8,20 @@ import commodities from "public/images/commodities.png";
 
 export default function TradingOptions() {
 	return (
-		<section className="px-3 bg-gray py-32 lg:px-0">
-			<div className="max-w-desktop mx-auto text-center ">
-				<h2 className="text-3xl lg:text-4xl font-bold mb-10">
-					One account. Over 600 opportunities to trade.
-				</h2>
-				<p className="lg:max-w-[60%] mx-auto leading-7 text-lg">
-					Universal Cryptosphere Trade Insights lets you diversify your portfolio by investing in a
-					global selection of stocks, ETFs, Futures, carefully screened and curated into portfolios
-					just for you. Trade more than 600 products including Forex, Share CFDs, Commodities,
-					Indices, and Metals with Limitless Trade Ltd MetaTrader 4 & 5 trading platforms.
-				</p>
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-28">
+		<section className="px-3 py-32 lg:px-0">
+			<div className="max-w-desktop mx-auto">
+				<div className="text-center">
+					<h2 className="text-3xl lg:text-4xl font-bold mb-10">
+						Endless Trading Possibilities With a Single Account
+					</h2>
+					<p className="lg:max-w-[60%] mx-auto leading-7 text-lg">
+						Universal Cryptosphere Trade Insights lets you diversify your portfolio by investing in
+						a global selection of stocks, ETFs, Futures, carefully screened and curated into
+						portfolios just for you. Trade more than 600 products including Forex, Share CFDs,
+						Commodities, Indices, and Metals.
+					</p>
+				</div>
+				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-20 mt-28 xl:pl-10">
 					<TradingOptionsCard
 						img={forex}
 						title="Forex"
@@ -71,10 +73,10 @@ interface TradingOptionsCardProps {
 
 const TradingOptionsCard = ({ img, alt, title, description }: TradingOptionsCardProps) => {
 	return (
-		<div className="flex flex-col items-center justify-center text-center">
+		<div className="">
 			<Image src={img} alt={alt} className="h-16 w-16" />
 			<h3 className="py-4 font-extrabold text-xl leading-7">{title}</h3>
-			<p className="text-lg">{description}</p>
+			<p className="text-xl w-[95%]">{description}</p>
 		</div>
 	);
 };

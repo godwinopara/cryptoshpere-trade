@@ -1,5 +1,6 @@
 import Image from "next/image";
 import signal from "public/images/signal.png";
+import chart from "public/images/chart.png";
 
 export default function WhyTradeCrypto() {
 	return (
@@ -29,7 +30,7 @@ export default function WhyTradeCrypto() {
 				</div>
 			</div>
 			<div>
-				<Image src={signal} alt="trading signal" />
+				<Image src={chart} alt="trading signal" />
 			</div>
 		</section>
 	);

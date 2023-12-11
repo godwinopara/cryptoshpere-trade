@@ -1,12 +1,31 @@
 import Image from "next/image";
 import fairPricingImg from "public/images/pricing-execution.png";
+import tradingPhone from "public/images/trading-mobile.png";
+import bitcoin from "public/images/bitcoin-logo.svg";
+import { FaBitcoin, FaEthereum } from "react-icons/fa";
 
 export default function FairPricing() {
 	return (
-		<section className="bg-gray py-24 px-4 lg:px-0">
-			<div className="max-w-desktop mx-auto grid lg:grid-cols-2 lg:gap-20 items-center">
-				<div>
-					<Image src={fairPricingImg} alt="Laptop diagram" />
+		<section className="bg-black4 text-white1 py-24 px-4 lg:px-0">
+			<div className="relative max-w-desktop mx-auto grid lg:grid-cols-2 lg:gap-20 items-center">
+				<div className="bg-pattern2 bg-cover bg-center">
+					<Image
+						src={tradingPhone}
+						alt="Laptop diagram"
+						width={300}
+						className="object-cover object-center mx-auto"
+					/>
+				</div>
+
+				<div className="absolute top-32 left-20 text-4xl text-green">
+					<FaBitcoin />
+				</div>
+				<div className="absolute top-20 left-[500px] text-5xl text-green">
+					<FaEthereum />
+				</div>
+
+				<div className="absolute -bottom-16 left-80 text-4xl text-green">
+					<FaBitcoin />
 				</div>
 
 				<div className="text-lg">

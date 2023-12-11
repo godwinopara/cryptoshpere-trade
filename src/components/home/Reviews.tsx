@@ -1,5 +1,5 @@
 import Image from "next/image";
-import user from "public/images/user-profile.png";
+import user from "public/images/user-profile.svg";
 
 export default function Reviews() {
 	return (
@@ -34,21 +34,21 @@ interface ReviewCardProps {
 const ReviewCard = ({ name, review }: ReviewCardProps) => {
 	return (
 		<div className="shadow-custom px-8 py-8 rounded-md mb-8 lg:mb-0">
-			<p className="mb-8">{review}</p>
+			<p className="mb-8 h-20">{review}</p>
 			<div className="flex justify-between items-center">
 				<div>
 					<span className="block font-bold text-lg">{name} ******</span>
-					<span className="text-lightblue text-lg font-semibold">Investor</span>
+					<span className="text-green text-lg font-semibold">Investor</span>
 					<div>
-						<span className="text-lightblue text-xl">&#9733;</span>
-						<span className="text-lightblue text-xl">&#9733;</span>
-						<span className="text-lightblue text-xl">&#9733;</span>
-						<span className="text-lightblue text-xl">&#9733;</span>
-						<span className="text-lightblue text-xl">&#9733;</span>
+						<span className="text-green text-xl">&#9733;</span>
+						<span className="text-green text-xl">&#9733;</span>
+						<span className="text-green text-xl">&#9733;</span>
+						<span className="text-green text-xl">&#9733;</span>
+						<span className="text-green text-xl">&#9733;</span>
 					</div>
 				</div>
-				<div className="border-4 p-[3px] border-lightblue rounded-[100%]">
-					<Image src={user} alt="user" height={65} width={65} />
+				<div className="border-4 p-3 border-green rounded-[100%]">
+					<Image src={user} alt="user" height={35} width={35} />
 				</div>
 			</div>
 		</div>

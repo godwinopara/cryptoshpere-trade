@@ -4,7 +4,7 @@ import meta from "public/images/metatrader.jpg";
 
 export default function Meta() {
 	return (
-		<section className="bg-gray py-20 px-4 lg:px-0">
+		<section className="py-20 px-4 lg:px-0">
 			<div className="max-w-desktop mx-auto grid lg:grid-cols-2 items-center gap-20">
 				<div>
 					<Image src={meta} alt="meta trader image" />
