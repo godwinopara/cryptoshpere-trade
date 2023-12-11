@@ -45,9 +45,9 @@ export default function DesktopNav() {
 	];
 
 	return (
-		<nav className="hidden lg:block bg-black3 sticky top-0 text-white px-4 xl:px-0">
+		<nav className="hidden xl:block bg-black3 sticky left-0 top-0 text-white px-4 xl:px-0">
 			<div className="flex justify-between items-center max-w-desktop mx-auto">
-				<Link className="font-extrabold uppercase text-sm xl:text-base" href="/">
+				<Link className="font-extrabold uppercase" href="/">
 					Universal Cryptosphere Trade
 				</Link>
 				<ul className="flex items-center">

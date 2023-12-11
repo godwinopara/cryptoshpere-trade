@@ -4,7 +4,7 @@ import meta from "public/images/metatrader.jpg";
 
 export default function Meta() {
 	return (
-		<section className="py-20 px-4 lg:px-0">
+		<section className="py-20 px-4 xl:px-0">
 			<div className="max-w-desktop mx-auto grid lg:grid-cols-2 items-center gap-20">
 				<div>
 					<Image src={meta} alt="meta trader image" />
@@ -18,7 +18,7 @@ export default function Meta() {
 						execute trading strategies on market-leading platforms.
 					</p>
 
-					<div className="lg:grid grid-cols-2">
+					<div className="md:grid grid-cols-2">
 						<div className="mb-8 lg:mb-0">
 							<h3 className="text-xl font-extrabold mb-5">Trading Platforms</h3>
 							<ul className="flex flex-col gap-5 text-lg">

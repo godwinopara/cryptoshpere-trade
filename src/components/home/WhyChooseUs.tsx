@@ -11,7 +11,7 @@ import { FaUserShield, FaBuilding, FaHeadset, FaUser } from "react-icons/fa";
 
 export default function WhyChooseUs() {
 	return (
-		<section className=" px-3 lg:px-0 py-28 bg-black text-white1">
+		<section className=" px-3 xl:px-0 py-28 bg-black text-white1">
 			<div className="max-w-desktop mx-auto">
 				<div className="text-center">
 					<h2 className="text-3xl font-semibold lg:text-5xl lg:font-extrabold mb-10">
@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
 						platforms. Backed by unmatched support.
 					</p>
 				</div>
-				<div className="grid grid-cols-2 gap-3 lg:grid-cols-4 xl:gap-8">
+				<div className="grid md:grid-cols-2 gap-3 xl:grid-cols-4 xl:gap-8">
 					<WCUCard
 						img={<FaUserShield />}
 						text="Secure and Stable"

@@ -18,19 +18,19 @@ export default function MobileNav() {
 	return (
 		// <!-- Main navigation container -->
 		<nav
-			className="relative flex w-full flex-nowrap items-center justify-between bg-darkBlue py-2 text-white shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4 lg:hidden"
+			className="relative flex w-full flex-nowrap items-center justify-between bg-black3 py-2 text-white shadow-lg hover:text-neutral-700 focus:text-neutral-700 xl:hidden"
 			data-te-navbar-ref
 		>
 			<div className="flex w-full flex-wrap items-center justify-between px-3">
 				<div className="flex w-full justify-between items-center py-3 ">
 					<div className="ml-2">
-						<a className="text-sm text-white" href="#">
+						<a className="text-sm text-white md:text-xl" href="#">
 							Universal Cryptosphere Trade
 						</a>
 					</div>
 					{/* <!-- Hamburger button for mobile view --> */}
 					<button
-						className="block border-0 bg-transparent px-2 text-white hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+						className="block border-0 bg-transparent px-2 text-white hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 xl:hidden"
 						type="button"
 						data-te-collapse-init
 						data-te-target="#navbarSupportedContent2"
@@ -58,23 +58,30 @@ export default function MobileNav() {
 
 				{/* <!-- Collapsible navbar container --> */}
 				<div
-					className="!visible pb-10 mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+					className="!visible pb-10 mt-5 hidden flex-grow basis-[100%] items-center"
 					id="navbarSupportedContent2"
 					data-te-collapse-item
 				>
 					{/* Auth btn */}
 					<div className="mb-5">
-						<Button btnText="Log in" className="w-full border border-white mb-4 mt-6" />
-						<Button btnText="Open CFD Account" className="w-full" />
+						<Link
+							href="/login"
+							className="rounded-[100px] py-3 px-5 border border-black2 bg-black1 font-bold mb-5 w-[70%] lg:w-[40%] block mx-auto text-center"
+						>
+							Sign In
+						</Link>
+						<Link
+							href="/login"
+							className="rounded-[100px] py-3 px-5 bg-green font-bold mb-5 w-[70%] lg:w-[40%] block mx-auto text-center"
+						>
+							Create Account
+						</Link>
 					</div>
 					{/* <!-- Left links --> */}
-					<ul
-						className="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
-						data-te-navbar-nav-ref
-					>
+					<ul className="list-style-none mr-auto flex flex-col pl-0" data-te-navbar-nav-ref>
 						{/* <!-- Home link --> */}
 						<Link
-							className="inline-block px-2  pb-2 pt-2.5  font-medium  text-white transition duration-150 ease-in-out"
+							className="inline-block px-2  pb-2 pt-2.5  font-medium  text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5"
 							data-te-collapse-init
 							data-te-ripple-init
 							data-te-ripple-color="light"
@@ -110,7 +117,7 @@ export default function MobileNav() {
 
 						{/* ============== About =============== */}
 						<Link
-							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5"
 							data-te-collapse-init
 							data-te-ripple-init
 							href="#abt"
@@ -137,7 +144,7 @@ export default function MobileNav() {
 						</ul>
 						{/* ============== Trading =============== */}
 						<Link
-							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5"
 							data-te-collapse-init
 							data-te-ripple-init
 							href="#trading"
@@ -170,7 +177,7 @@ export default function MobileNav() {
 						</ul>
 						{/* ============== Platform =============== */}
 						<Link
-							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5"
 							data-te-collapse-init
 							data-te-ripple-init
 							href="#platform"
@@ -207,7 +214,7 @@ export default function MobileNav() {
 						</ul>
 						{/* ============== Tools =============== */}
 						<Link
-							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out"
+							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5 "
 							data-te-collapse-init
 							data-te-ripple-init
 							href="#tools"
@@ -240,7 +247,7 @@ export default function MobileNav() {
 						</ul>
 						{/* ============== News and Education =============== */}
 						<Link
-							className="inline-block px-2  pb-2 pt-2.5 font-medium text-white transition duration-150 ease-in-out"
+							className="inline-block px-2  pb-2 pt-2.5 font-medium text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5"
 							data-te-collapse-init
 							data-te-ripple-init
 							href="#news"

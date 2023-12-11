@@ -52,13 +52,11 @@ export default function Footer() {
 		{ link: "/economic-calendar", text: "Economic Calendar" },
 	];
 
-	const legaDocumentLinks = [{ link: "/" }];
-
 	return (
-		<footer className="bg-black4 text-white py-20 px-6 lg:px-0">
+		<footer className="bg-black4 text-white py-20 px-6 xl:px-0">
 			<div className="max-w-desktop mx-auto">
-				<div className="flex justify-between">
-					<div className="w-[47%]">
+				<div className="lg:flex justify-between">
+					<div className="w-full lg:w-[47%]">
 						<Link href="/" className="uppercase text-xl pb-5 block font-bold lg:text-xl">
 							Universal Cryptosphere Trade
 						</Link>
@@ -90,7 +88,7 @@ export default function Footer() {
 							</div>
 						</div>
 						<div>
-							<p className="w-[60%]">
+							<p className="w-full lg:w-[60%]">
 								This website is owned and operated by <br />
 								Universal Cryptosphere Trade. All rights reserved. <br /> <br />© 2023 Universal
 								Cryptosphere Trade (MU).
@@ -98,7 +96,7 @@ export default function Footer() {
 						</div>
 					</div>
 
-					<div className="grid lg:flex justify-between flex-wrap pb-10 text-sm lg:gap-5 xl:text-base flex-1">
+					<div className="md:grid md:grid-cols-3 xl:flex lg:justify-between lg:flex-wrap pb-10 lg:gap-5 xl:text-base flex-1">
 						<FooterNavWrapper title="Account" links={accountSubLinks} />
 						<FooterNavWrapper title="About" links={aboutSubLinks} />
 						<FooterNavWrapper title="Trading" links={tradingSubLinks} />
@@ -146,7 +144,7 @@ interface FooterNavWrapperProps {
 
 const FooterNavWrapper = ({ links, title }: FooterNavWrapperProps) => {
 	return (
-		<div className="flex">
+		<div className="my-10 lg:my-0">
 			<div>
 				<h3 className="font-bold mb-3">{title}</h3>
 				<ul>

@@ -6,7 +6,7 @@ import Button from "../shared/Button";
 export default function Hero() {
 	return (
 		<>
-			<div className="bg-black bg-pattern min-h-[85svh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
+			<div className="bg-black bg-pattern min-h-[85svh] md:min-h-[50svh] xl:min-h-[85svh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
 				<div className="px-6 xl:px-0 grid text-center lg:text-left lg:grid-cols-2 lg:gap-20 items-center max-w-desktop mx-auto">
 					<div className="mb-20 lg:mb-0">
 						<div className="mb-10">
@@ -19,7 +19,7 @@ export default function Hero() {
 							</p>
 							<p className="text-md">*Investment Trends worldwide Leverage Trading Report 2022.</p>
 						</div>
-						<div className="md:flex items-center gap-2">
+						<div className="lg:flex items-center gap-2">
 							<Button btnText="Create Account" className="bg-green" />
 						</div>
 					</div>

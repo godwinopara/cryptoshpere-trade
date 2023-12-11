@@ -3,11 +3,11 @@ import user from "public/images/user-profile.svg";
 
 export default function Reviews() {
 	return (
-		<div className="py-16">
+		<div className="py-16 px-3 xl:px-0">
 			<h2 className="font-bold text-center text-3xl mb-10 lg:text-4xl">
 				Hear what people are saying about us
 			</h2>
-			<div className="grid px-4 lg:px-0 lg:grid-cols-3 gap-8 max-w-desktop mx-auto">
+			<div className="grid px-4 xl:px-0 lg:grid-cols-3 gap-8 max-w-desktop mx-auto">
 				<ReviewCard
 					name="Roberto"
 					review="Universal Cryptosphere Trade has had the best traders and accounts managers we have ever
@@ -33,8 +33,8 @@ interface ReviewCardProps {
 
 const ReviewCard = ({ name, review }: ReviewCardProps) => {
 	return (
-		<div className="shadow-custom px-8 py-8 rounded-md mb-8 lg:mb-0">
-			<p className="mb-8 h-20">{review}</p>
+		<div className="shadow-custom px-8 py-8 rounded-md mb-8 max-w-[400px] mx-auto lg:mb-0">
+			<p className="mb-10 h-24">{review}</p>
 			<div className="flex justify-between items-center">
 				<div>
 					<span className="block font-bold text-lg">{name} ******</span>

@@ -4,7 +4,7 @@ import chart from "public/images/chart.png";
 
 export default function WhyTradeCrypto() {
 	return (
-		<section className="grid px-4 lg:px-0 lg:grid-cols-2 gap-20 items-center text-lg max-w-desktop mx-auto py-24">
+		<section className="grid px-4 xl:px-0 lg:grid-cols-2 gap-20 items-center text-lg max-w-desktop mx-auto py-24">
 			<div>
 				<h2 className="text-3xl text-center lg:text-left lg:text-4xl font-bold mb-8">
 					Why Trade Cryptocurrency?

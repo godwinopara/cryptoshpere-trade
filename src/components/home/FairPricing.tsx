@@ -6,7 +6,7 @@ import { FaBitcoin, FaEthereum } from "react-icons/fa";
 
 export default function FairPricing() {
 	return (
-		<section className="bg-black4 text-white1 py-24 px-4 lg:px-0">
+		<section className="bg-black4 text-white1 py-24 px-4 xl:px-0">
 			<div className="relative max-w-desktop mx-auto grid lg:grid-cols-2 lg:gap-20 items-center">
 				<div className="bg-pattern2 bg-cover bg-center">
 					<Image

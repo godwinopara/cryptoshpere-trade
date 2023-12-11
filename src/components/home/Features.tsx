@@ -4,17 +4,17 @@ import { FaShieldAlt, FaChartPie, FaMoneyCheck, FaComment } from "react-icons/fa
 
 export default function Features() {
 	return (
-		<section className="py-20 bg-black4 text-white1">
+		<section className="px-3 py-20 xl:px-0 bg-black4 text-white1">
 			<div className="max-w-desktop mx-auto">
 				<div className="text-center mb-16">
-					<h2 className="text-5xl font-bold mb-3">Start Investing Today</h2>
+					<h2 className="text-3xl lg:text-5xl font-bold mb-3">Start Investing Today</h2>
 					<p className="text-xl">
 						Universal Cryptosphere Trade has a variety of features that set us apart
 					</p>
 				</div>
 
-				<div className="grid grid-cols-2 items-center gap-20">
-					<div>
+				<div className="grid xl:flex items-center gap-20">
+					<div className="md:grid md:grid-cols-2 xl:w-[60%]">
 						<FeatureCard
 							icon={<FaMoneyCheck />}
 							title="Fast Payments"
@@ -35,11 +35,11 @@ export default function Features() {
 							icon={<FaComment />}
 							title="Transparent Reporting"
 							description="Access trade result easily and check historical trade result with up to date trade
-								ticker in member portfolio and copy trade connect directly to our results."
+								ticker in member portfolio."
 						/>
 					</div>
-					<div className="bg-pattern2 bg-center bg-cover">
-						<Image src={phone} alt="image of a chart" />
+					<div className="bg-pattern2 bg-center bg-cover xl:w-[40%]">
+						<Image src={phone} alt="image of a chart" className="mx-auto w-1/2 xl:w-full" />
 					</div>
 				</div>
 			</div>
@@ -55,11 +55,13 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ title, description, icon }: FeatureCardProps) => {
 	return (
-		<div className="mb-10 flex gap-x-6 items-start">
-			<div className="text-3xl bg-green rounded-[100%] p-4">{icon}</div>
+		<div className="mb-10 px-4 xl:px-0 lg:flex gap-x-6 items-start">
+			<div className="inline-block mb-4 text-3xl bg-green rounded-[100%] p-4 lg:mb-0 lg:block">
+				{icon}
+			</div>
 			<div>
 				<h3 className="font-semibold text-xl mb-2 text-white">{title}</h3>
-				<p className="w-[80%]">{description}</p>
+				<p className="lg:w-[80%]">{description}</p>
 			</div>
 		</div>
 	);

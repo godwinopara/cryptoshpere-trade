@@ -10,15 +10,19 @@ import { FaCheck } from "react-icons/fa";
 
 export default function Plans() {
 	return (
-		<section className="bg-black4 py-24 text-white">
-			<div className="text-center mb-44">
+		<section className="bg-black4 px-3 py-24 text-white xl:px-0">
+			<div className="text-center mb-20 lg:mb-44">
 				<h2 className="text-4xl font-bold mb-3">Get started in a few minutes</h2>
 				<p className="text-xl max-w-[500px] mx-auto">
 					Universal Cryptosphere Trade supports a variety of the most popular digital currencies.
 				</p>
 			</div>
-			<div className="relative max-w-desktop mx-auto grid grid-cols-3 mb-32">
-				<Image src={arrowUp} alt="arrow up" className="absolute left-[23%] -top-[23%]" />
+			<div className="relative max-w-desktop mx-auto grid gap-y-20 mb-10 lg:gap-y-0 lg:grid-cols-3 lg:mb-32">
+				<Image
+					src={arrowUp}
+					alt="arrow up"
+					className="hidden lg:block absolute left-[23%] -top-[40%] xl:-top-[23%]"
+				/>
 				<div className="text-center">
 					<div className="bg-[#ffd6e0] mb-3 mx-auto h-[120px] w-[120px] flex items-center justify-center rounded-[100%]">
 						<Image src={userProfile} alt="user image" />
@@ -37,7 +41,7 @@ export default function Plans() {
 						Deposit funds into your account to begin trading
 					</p>
 				</div>
-				<div className="text-center relative">
+				<div className="text-center relative mt-14 lg:mt-0">
 					<div className="relative bg-[#e8f369] mb-3 mx-auto h-[120px] w-[120px] flex items-center justify-center rounded-[100%]">
 						<Image src={trading} alt="user image" />
 						<Image src={spark} alt="spark image" className="absolute -right-[60%] -top-[60%]" />
@@ -46,12 +50,16 @@ export default function Plans() {
 					<p className="text-lg w-[70%] mx-auto text-center">
 						Browse the available cryptocurrencies and place trades in the app
 					</p>
-					<Image src={arrowDown} alt="arrow up" className="absolute -bottom-[40%] -left-[25%]" />
+					<Image
+						src={arrowDown}
+						alt="arrow up"
+						className="hidden lg:block absolute -bottom-[40%] -left-[25%]"
+					/>
 				</div>
 			</div>
 
-			<div className="lg:grid grid-cols-2 gap-20 max-w-desktop mx-auto pt-32">
-				<div className="bg-white py-14 px-10 text-black border border-t-4">
+			<div className="lg:grid grid-cols-2 gap-x-20 max-w-desktop mx-auto pt-32">
+				<div className="bg-white py-14 px-10 text-black border border-t-4 mb-20 lg:mb-0">
 					<h3 className="font-bold text-2xl mb-5">GO Plus+ Account</h3>
 					<p className="text-xl mb-8">Leverage up to 500:1</p>
 					<p className="text-xl mb-8">Spreads from 0.0 pips</p>

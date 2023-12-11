@@ -8,7 +8,7 @@ import commodities from "public/images/commodities.png";
 
 export default function TradingOptions() {
 	return (
-		<section className="px-3 py-32 lg:px-0">
+		<section className="px-3 py-32 xl:px-0">
 			<div className="max-w-desktop mx-auto">
 				<div className="text-center">
 					<h2 className="text-3xl lg:text-4xl font-bold mb-10">
@@ -21,7 +21,7 @@ export default function TradingOptions() {
 						Commodities, Indices, and Metals.
 					</p>
 				</div>
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-20 mt-28 xl:pl-10">
+				<div className="grid px-4 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-28 xl:px-0 xl:pl-10">
 					<TradingOptionsCard
 						img={forex}
 						title="Forex"
