@@ -5,29 +5,29 @@ import infinity from "public/images/infinity.svg";
 
 export default function CoreValues() {
 	return (
-		<div className="bg-black text-white1 py-20">
+		<div className="bg-black text-white1 py-20 px-6 xl:px-0">
 			<div className="max-w-desktop mx-auto ">
 				<div className="mb-20">
 					<h3 className="text-green text-xl mb-4 font-semibold">Core Values</h3>
-					<h2 className="text-5xl font-extrabold mb-5">
+					<h2 className="text-3xl xl:text-5xl font-extrabold mb-5">
 						Embracing Values, <br />
 						Delivering Results
 					</h2>
-					<p className="max-w-[50%] text-lg">
+					<p className="xl:max-w-[50%] text-lg">
 						Everything we do at Universal Cryptosphere Trade is guided by our five core values: Do
 						the right thing, put clients first, lead with exceptional ideas, commit to diversity and
 						inclusion, and give back.
 					</p>
 				</div>
 
-				<div className="grid grid-cols-3 gap-x-20">
+				<div className="grid gap-y-20 xl:grid-cols-3  xl:gap-y-0 xl:gap-x-20">
 					<Card
 						img={astronut}
 						title="Integrity and Compliance"
 						description="We endeavour to provide clients with transparent, secure and reliable services.
 								Universal Cryptosphere Trade is licensed by the Financial Services Commission (FSC)
 								of Mauritius as an Investment Dealer (Full Service Dealer, excluding Underwriting)."
-						className="w-[60%]"
+						className="xl:w-[60%]"
 					/>
 					<Card
 						img={infinity}
@@ -35,7 +35,7 @@ export default function CoreValues() {
 						description="Universal Cryptosphere Trade is differentiated by the caliber of our diverse team.
 								Our culture of access and inclusion has built our legacy and shapes our future,
 								helping to strengthen our business and bring value to clients."
-						className="w-[60%]"
+						className="xl:w-[60%]"
 					/>
 					<Card
 						img={rocket}
@@ -43,7 +43,7 @@ export default function CoreValues() {
 						description="Universal Cryptosphere Tradeis dedicated to ensuring fast execution speed, quality
 								trading platforms and secure transactions to bring clients the most enjoyable
 								trading experience."
-						className="w-[60%]"
+						className="xl:w-[60%]"
 					/>
 				</div>
 			</div>

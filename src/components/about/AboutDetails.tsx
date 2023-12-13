@@ -3,14 +3,14 @@ import ideaChart from "public/images/ideas-chart.png";
 
 export default function AboutDetails() {
 	return (
-		<div className="py-20 bg-black text-white1 ">
-			<div className="max-w-desktop mx-auto flex items-center gap-x-20">
-				<div className="flex-1">
+		<div className="py-20 bg-black text-white1 px-6 xl:px-0">
+			<div className="max-w-desktop mx-auto xl:flex items-center gap-x-20">
+				<div className="flex-1 mb-20 xl:mb-0">
 					<Image src={ideaChart} alt="forex chart" />
 				</div>
-				<div className="mb-20 flex-1">
+				<div className="xl:mb-20 flex-1">
 					<h3 className="text-green text-xl mb-4 font-semibold">About Us</h3>
-					<h2 className="text-5xl font-extrabold mb-5">
+					<h2 className="text-4xl xl:text-5xl font-extrabold mb-5">
 						Global markets, <br />
 						in your hand
 					</h2>

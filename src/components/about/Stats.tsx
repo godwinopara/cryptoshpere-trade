@@ -1,7 +1,7 @@
 export default function Stats() {
 	return (
 		<section className="bg-black4 pb-20">
-			<div className="max-w-desktop mx-auto grid grid-cols-3 items-center text-center text-white1">
+			<div className="max-w-desktop mx-auto grid gap-y-10 xl:grid-cols-3 xl:gap-y-0 items-center text-center text-white1">
 				<div className="border-e-2 border-black1">
 					<p className="text-green text-4xl mb-3">$10m</p>
 					<p className="text-xl">Quarterly volume traded</p>
