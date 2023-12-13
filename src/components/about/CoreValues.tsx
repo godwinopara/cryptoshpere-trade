@@ -20,7 +20,7 @@ export default function CoreValues() {
 					</p>
 				</div>
 
-				<div className="grid gap-y-20 xl:grid-cols-3  xl:gap-y-0 xl:gap-x-20">
+				<div className="grid gap-y-20 md:grid-cols-2 md:gap-x-10 xl:grid-cols-3  xl:gap-y-0 xl:gap-x-20">
 					<Card
 						img={astronut}
 						title="Integrity and Compliance"
