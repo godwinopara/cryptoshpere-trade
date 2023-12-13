@@ -3,7 +3,7 @@ import user from "public/images/user-profile.svg";
 
 export default function Reviews() {
 	return (
-		<div className="py-16 px-3 xl:px-0">
+		<div className="py-16 px-3 xl:px-0 bg-white1">
 			<h2 className="font-bold text-center text-3xl mb-10 lg:text-4xl">
 				Hear what people are saying about us
 			</h2>

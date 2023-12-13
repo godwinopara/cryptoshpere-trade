@@ -14,6 +14,7 @@ const config: Config = {
 				pattern: "url('/images/background-pattern.svg')",
 				pattern2: "url('/images/pattern-2.png')",
 				greenpatten: "url('/images/green-pattern.png')",
+				pattern3: "url('/images/pattern-3.webp')",
 			},
 			fontSize: {
 				46: "2.875rem",

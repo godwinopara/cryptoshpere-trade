@@ -5,6 +5,7 @@ import crypto from "public/images/crypto.png";
 import metals from "public/images/metals.png";
 import indices from "public/images/indices.png";
 import commodities from "public/images/commodities.png";
+import TradingOptionsCard from "../shared/TradingOptionsCard";
 
 export default function TradingOptions() {
 	return (
@@ -63,20 +64,3 @@ export default function TradingOptions() {
 		</section>
 	);
 }
-
-interface TradingOptionsCardProps {
-	img: string | StaticImageData;
-	alt: string;
-	title: string;
-	description: string;
-}
-
-const TradingOptionsCard = ({ img, alt, title, description }: TradingOptionsCardProps) => {
-	return (
-		<div className="">
-			<Image src={img} alt={alt} className="h-16 w-16" />
-			<h3 className="py-4 font-extrabold text-xl leading-7">{title}</h3>
-			<p className="text-xl w-[95%]">{description}</p>
-		</div>
-	);
-};
