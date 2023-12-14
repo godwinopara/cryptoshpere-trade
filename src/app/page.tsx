@@ -11,7 +11,7 @@ import WhyTradeCrypto from "@/components/home/WhyTradeCrypto";
 
 export default function Home() {
 	return (
-		<main className="">
+		<>
 			<Hero />
 			<WhyChooseUs />
 			<Features />
@@ -22,6 +22,6 @@ export default function Home() {
 			<Plans />
 			<Reviews />
 			<Meta />
-		</main>
+		</>
 	);
 }

@@ -10,7 +10,7 @@ import Reviews from "@/components/shared/Reviews";
 
 export default function About() {
 	return (
-		<main>
+		<>
 			<AboutHero />
 			<Stats />
 			<AboutDetails />
@@ -18,6 +18,6 @@ export default function About() {
 			<Services />
 			<Features />
 			<Reviews />
-		</main>
+		</>
 	);
 }
