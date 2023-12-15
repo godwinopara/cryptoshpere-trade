@@ -1,6 +1,6 @@
 export default function AccountFundingDetails() {
 	return (
-		<section className="max-w-[900px] mx-auto pt-20 pb-40">
+		<section className="max-w-[900px] mx-auto pt-20 pb-40 px-6 xl:px-0">
 			<div className="mb-5">
 				<h3 className="mb-5 font-bold text-3xl">Fees and Charges</h3>
 				<p>
