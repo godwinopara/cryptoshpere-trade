@@ -13,7 +13,7 @@ export default function FundingOptions() {
 			<div className="max-w-desktop mx-auto">
 				<div className="mb-32">
 					<h2 className="text-4xl font-bold mb-5">Flexible Account Funding</h2>
-					<p className=" xl:max-w-[70%] text-lg">
+					<p className=" lg:max-w-[70%] text-lg">
 						Universal Cryptosphere Trade makes it simple to move your money from place to place. We
 						provide a range of account funding and account withdrawal options in multiple base
 						currencies. Deposit instantly and for free using a variety of methods via the Client
@@ -55,7 +55,7 @@ export default function FundingOptions() {
 					<FundingOptionsCard img={fasapay} imgLabel="FASAPAY" currencies="USD" instant />
 				</div>
 
-				<div className="text-xl xlmax-w-[70%] mx-auto xltext-lg italic my-24">
+				<div className="text-xl lg:max-w-[70%] mx-auto md:text-lg italic my-24">
 					<p>
 						<strong>Please note: </strong>not all payment options are available in all countries.
 						Please log into the secure Client Portal to view what payment options are available to
@@ -80,21 +80,16 @@ interface FundingOptionCardProps {
 
 const FundingOptionsCard = ({ img, imgLabel, currencies, instant }: FundingOptionCardProps) => {
 	return (
-		<div className="xl:flex items-center justify-between mb-20 xl:mb-0">
-			<div className="xl:flex items-center w-full mb-5">
-				<Image
-					src={img}
-					alt="mastercard logo"
-					width={100}
-					className="h-auto mx-auto mb-4 xl:mb-0"
-				/>
-				<p className="font-bold text-xl text-center xl:ml-4  xl:text-left">{imgLabel}</p>
+		<div className="md:flex items-center  mb-20 xl:mb-0 xl:justify-between">
+			<div className="flex w-full border">
+				<Image src={img} alt="mastercard logo" width={100} className="mb-4 mx-auto md:ml-0" />
+				<p className="font-bold text-xl text-center md:text-left">{imgLabel}</p>
 			</div>
-			<div className="w-full text-center xl:text-left">
+			<div className="w-full text-center md:text-left">
 				<p className="font-bold text-xl mb-3">Accepted Currencies</p>
 				<p className="mb-5 xl:mb-0">{currencies}</p>
 			</div>
-			<div className="w-full pl-24 mb-5 xl:mb-0">
+			<div className="w-full mb-5 text-center xl:text-left xl:pl-24  xl:mb-0">
 				{instant && (
 					<p>
 						<span className="font-bold text-green">INSTANT</span>
