@@ -80,9 +80,14 @@ interface FundingOptionCardProps {
 
 const FundingOptionsCard = ({ img, imgLabel, currencies, instant }: FundingOptionCardProps) => {
 	return (
-		<div className="md:flex items-center  mb-20 xl:mb-0 xl:justify-between">
-			<div className="flex w-full border">
-				<Image src={img} alt="mastercard logo" width={100} className="mb-4 mx-auto md:ml-0" />
+		<div className="md:flex gap-x-10 items-center  mb-20 xl:mb-0 xl:justify-between">
+			<div className="flex items-center w-full">
+				<Image
+					src={img}
+					alt="mastercard logo"
+					width={100}
+					className="mb-4 mx-auto md:mx-0 md:mr-4"
+				/>
 				<p className="font-bold text-xl text-center md:text-left">{imgLabel}</p>
 			</div>
 			<div className="w-full text-center md:text-left">
