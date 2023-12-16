@@ -9,7 +9,7 @@ export default function CompareacctHero() {
 				<div className="mb-20 lg:mb-0">
 					<div className="mb-10">
 						<h1 className="text-4xl  lg:text-90 lg:leading-120  mb-5">
-							Compare Univeral Trade accounts
+							Compare Universal Trade accounts
 						</h1>
 						<p className="text-lg mb-4 lg:xit'                                                                                                                                                                                                                       :text-xl">
 							Our accounts embrace leading technology, tools and order execution. With features and
