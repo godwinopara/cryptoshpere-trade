@@ -38,7 +38,7 @@ const config: Config = {
 				green: "#059669",
 			},
 			maxWidth: {
-				desktop: "1280px",
+				desktop: "1240px",
 			},
 			boxShadow: {
 				custom: "rgba(0, 0, 0, 0.15) 0px 4px 8px 0px",

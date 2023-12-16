@@ -48,7 +48,7 @@ export default function Plans() {
 					</div>
 					<h3 className="text-2xl font-medium">Start Trading</h3>
 					<p className="text-lg w-[70%] mx-auto text-center">
-						Browse the available cryptocurrencies and place trades in the app
+						Take a position in your choice of instrument
 					</p>
 					<Image
 						src={arrowDown}
