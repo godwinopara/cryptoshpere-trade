@@ -11,7 +11,7 @@ export default function DesktopNav() {
 
 	const aboutSubLinks = [
 		{ link: "/about", text: "About Us" },
-		{ link: "/document", text: "Legal Documents" },
+		{ link: "/legal", text: "Legal Documents" },
 		{ link: "/contact", text: "Contact Us" },
 	];
 

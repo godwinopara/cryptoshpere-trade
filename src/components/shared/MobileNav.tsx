@@ -130,16 +130,13 @@ export default function MobileNav() {
 
 						<ul className="!visible hidden px-8 py-4 bg-midblue" id="abt" data-te-collapse-item>
 							<li className="block rounded-lg p-2 text-sm">
-								<Link href="about-go-markets/index.html">About Us</Link>
+								<Link href="/about">About Us</Link>
 							</li>
 							<li className="block rounded-lg p-2 text-sm">
-								<Link href="chelseafc/index.html">Chelsea FC Partnership</Link>
+								<Link href="/legal">Legal Documents</Link>
 							</li>
 							<li className="block rounded-lg p-2 text-sm">
-								<Link href="chelseafc/index.html">Legal Documents</Link>
-							</li>
-							<li className="block rounded-lg p-2 text-sm">
-								<Link href="contact-us/index.html">Contact Us</Link>
+								<Link href="/contact">Contact Us</Link>
 							</li>
 						</ul>
 						{/* ============== Trading =============== */}
