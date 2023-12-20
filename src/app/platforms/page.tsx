@@ -94,7 +94,7 @@ export default function Platforms() {
 			<section className="max-w-desktop mx-auto py-20">
 				<div className="mb-32">
 					<h2 className="text-center font-bold text-4xl mb-5">Wide market choice</h2>
-					<p className="text-center text-lg w-[60%] mx-auto">
+					<p className="px-6 text-center text-lg xl:px-0 xl:w-[60%] mx-auto">
 						Over 350 CFD products, competitive spreads and margins across FX, share CFDs, indices,
 						metals and commodities.
 					</p>

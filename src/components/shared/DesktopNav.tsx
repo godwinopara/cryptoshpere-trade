@@ -17,32 +17,32 @@ export default function DesktopNav() {
 
 	const tradingSubLinks = [
 		{ link: "/product", text: "Product Overview" },
-		{ link: "/forex", text: "Forex CFDs" },
-		{ link: "/share", text: "Share CFDs" },
-		{ link: "/index", text: "Index CFDs" },
-		{ link: "/metal", text: "Metal CFDs" },
-		{ link: "/commodity", text: "Commodity CFDs" },
+		// { link: "/forex", text: "Forex CFDs" },
+		// { link: "/share", text: "Share CFDs" },
+		// { link: "/index", text: "Index CFDs" },
+		// { link: "/metal", text: "Metal CFDs" },
+		// { link: "/commodity", text: "Commodity CFDs" },
 	];
 	const platformSubLinks = [
 		{ link: "/platforms", text: "Platforms Overview" },
-		{ link: "/metatrader4", text: "MetaTrader 4" },
-		{ link: "/metatrader5", text: "MetaTrader 5" },
-		{ link: "/mobile-trading", text: "Mobile trading platforms" },
-		{ link: "/webtrader", text: "Web Trader" },
+		// { link: "/metatrader4", text: "MetaTrader 4" },
+		// { link: "/metatrader5", text: "MetaTrader 5" },
+		// { link: "/mobile-trading", text: "Mobile trading platforms" },
+		// { link: "/webtrader", text: "Web Trader" },
 	];
-	const toolsSubLinks = [
-		{ link: "/autochartist", text: "Autochartist" },
-		{ link: "genesis", text: "Genesis" },
-		{ link: "/vps", text: "VPS" },
-		{ link: "/trading-central", text: "Trading Central" },
-		{ link: "/a-quant", text: "A-Quant" },
-		{ link: "/fxbook", text: "MyFxBook" },
-	];
-	const newsSubLinks = [
-		{ link: "/news-analysis", text: "News & Analysis" },
-		{ link: "/education-hub", text: "Education Hub" },
-		{ link: "/economic-calendar", text: "Economic Calendar" },
-	];
+	// const toolsSubLinks = [
+	// 	{ link: "/autochartist", text: "Autochartist" },
+	// 	{ link: "genesis", text: "Genesis" },
+	// 	{ link: "/vps", text: "VPS" },
+	// 	{ link: "/trading-central", text: "Trading Central" },
+	// 	{ link: "/a-quant", text: "A-Quant" },
+	// 	{ link: "/fxbook", text: "MyFxBook" },
+	// ];
+	// const newsSubLinks = [
+	// 	{ link: "/news-analysis", text: "News & Analysis" },
+	// 	{ link: "/education-hub", text: "Education Hub" },
+	// 	{ link: "/economic-calendar", text: "Economic Calendar" },
+	// ];
 
 	return (
 		<nav className="hidden xl:block bg-black3 sticky left-0 top-0 text-white px-4 xl:px-0">
@@ -115,7 +115,7 @@ export default function DesktopNav() {
 							})}
 						</ul>
 					</li>
-					<li className="relative tools">
+					{/* <li className="relative tools">
 						<button className="py-5">
 							<li className="px-4 hover:bg-black">Tools</li>
 						</button>
@@ -130,8 +130,8 @@ export default function DesktopNav() {
 								);
 							})}
 						</ul>
-					</li>
-					<li className="relative news">
+					</li> */}
+					{/* <li className="relative news">
 						<button className="py-5">
 							<li className="px-4 hover:bg-black">News & Education</li>
 						</button>
@@ -146,7 +146,7 @@ export default function DesktopNav() {
 								);
 							})}
 						</ul>
-					</li>
+					</li> */}
 				</ul>
 				<div className="flex items-center gap-x-4">
 					<Link href="/login" className="rounded-[100px] py-2 px-5 border border-black2 bg-black1">

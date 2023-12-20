@@ -156,7 +156,7 @@ export default function MobileNav() {
 							<li className="block rounded-lg p-2 text-sm">
 								<Link href="/product">Product overview</Link>
 							</li>
-							<li className="block rounded-lg p-2 text-sm">
+							{/* <li className="block rounded-lg p-2 text-sm">
 								<Link href="/forex-cfd">Forex CFDs</Link>
 							</li>
 							<li className="block rounded-lg p-2 text-sm">
@@ -170,7 +170,7 @@ export default function MobileNav() {
 							</li>
 							<li className="block rounded-lg p-2 text-sm">
 								<Link href="/commodity-cfd-trading">Commodity CFDs</Link>
-							</li>
+							</li> */}
 						</ul>
 						{/* ============== Platform =============== */}
 						<Link
@@ -191,13 +191,10 @@ export default function MobileNav() {
 							data-te-collapse-item
 						>
 							<li className="block rounded-lg p-2 text-sm">
-								<Link href="/product">Product overview</Link>
+								<a href="/platforms">Platforms Overview</a>
 							</li>
-							<li className="block rounded-lg p-2 text-sm">
-								<a href="platforms/index.html">Platforms Overview</a>
-							</li>
-							<li className="block rounded-lg p-2 text-sm">
-								<a href="metatrader-4/index.html">MetaTrader 4</a>
+							{/* <li className="block rounded-lg p-2 text-sm">
+								<a href="/metatrader-4">MetaTrader 4</a>
 							</li>
 							<li className="block rounded-lg p-2 text-sm">
 								<a href="metatrader-5/index.html">MetaTrader 5</a>
@@ -207,10 +204,10 @@ export default function MobileNav() {
 							</li>
 							<li className="block rounded-lg p-2 text-sm">
 								<a href="https://app.lesslimittrade.com/">WebTrader</a>
-							</li>
+							</li> */}
 						</ul>
 						{/* ============== Tools =============== */}
-						<Link
+						{/* <Link
 							className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5 "
 							data-te-collapse-init
 							data-te-ripple-init
@@ -241,9 +238,9 @@ export default function MobileNav() {
 							<li className="block rounded-lg p-2 text-sm">
 								<a href="https://app.lesslimittrade.com/">WebTrader</a>
 							</li>
-						</ul>
+						</ul> */}
 						{/* ============== News and Education =============== */}
-						<Link
+						{/* <Link
 							className="inline-block px-2  pb-2 pt-2.5 font-medium text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5"
 							data-te-collapse-init
 							data-te-ripple-init
@@ -265,7 +262,7 @@ export default function MobileNav() {
 							<li className="block rounded-lg p-2 text-sm">
 								<a href="economic-calendar/index.html">Economic Calendar</a>
 							</li>
-						</ul>
+						</ul> */}
 					</ul>
 				</div>
 			</div>
