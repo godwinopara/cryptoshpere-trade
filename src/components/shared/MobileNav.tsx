@@ -71,7 +71,7 @@ export default function MobileNav() {
 							Sign In
 						</Link>
 						<Link
-							href="/login"
+							href="/signup"
 							className="rounded-[100px] py-3 px-5 bg-green font-bold mb-5 w-[70%] lg:w-[40%] block mx-auto text-center"
 						>
 							Create Account

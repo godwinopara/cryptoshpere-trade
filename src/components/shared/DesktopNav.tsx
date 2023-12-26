@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import logo from "public/images/logo.svg";
 
 export default function DesktopNav() {
 	const homeSubLinks = [
@@ -45,77 +47,78 @@ export default function DesktopNav() {
 	// ];
 
 	return (
-		<nav className="hidden xl:block bg-black3 sticky left-0 top-0 text-white px-4 xl:px-0">
-			<div className="flex justify-between items-center max-w-desktop mx-auto">
-				<Link className="font-extrabold uppercase" href="/">
-					Universal Cryptosphere Trade
-				</Link>
-				<ul className="flex items-center">
-					<li className="account relative">
-						<button className="py-5">
-							<li className="px-4 hover:bg-black">Accounts</li>
-						</button>
-						<ul className="account__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
-							{homeSubLinks.map((subLink, id) => {
-								return (
-									<li key={id} className="hover:bg-black inline-block py-3 px-4">
-										<Link href={subLink.link} className=" block">
-											{subLink.text}
-										</Link>
-									</li>
-								);
-							})}
-						</ul>
-					</li>
-					<li className="about relative">
-						<button className="py-5">
-							<li className="px-4 hover:bg-black">About</li>
-						</button>
-						<ul className="about__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
-							{aboutSubLinks.map((subLink, id) => {
-								return (
-									<li key={id} className="hover:bg-black inline-block ">
-										<Link href={subLink.link} className="py-3 px-4 block">
-											{subLink.text}
-										</Link>
-									</li>
-								);
-							})}
-						</ul>
-					</li>
-					<li className="relative trading">
-						<button className="py-5">
-							<li className="px-4 hover:bg-black">Trading</li>
-						</button>
-						<ul className="trading__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
-							{tradingSubLinks.map((subLink, id) => {
-								return (
-									<li key={id} className="hover:bg-black inline-block ">
-										<Link href={subLink.link} className="py-3 px-4 block">
-											{subLink.text}
-										</Link>
-									</li>
-								);
-							})}
-						</ul>
-					</li>
-					<li className="relative platform">
-						<button className="py-5">
-							<li className="px-4 hover:bg-black">Platforms</li>
-						</button>
-						<ul className="platform__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
-							{platformSubLinks.map((subLink, id) => {
-								return (
-									<li key={id} className="hover:bg-black inline-block ">
-										<Link href={subLink.link} className="py-3 px-4 block">
-											{subLink.text}
-										</Link>
-									</li>
-								);
-							})}
-						</ul>
-					</li>
-					{/* <li className="relative tools">
+		<>
+			<nav className="hidden xl:block bg-black3 fixed right-0 left-0 top-0 text-white px-4 py-1 xl:px-0">
+				<div className="flex justify-between items-center max-w-desktop mx-auto">
+					<Link className="font-extrabold uppercase" href="/">
+						<Image src={logo} alt="logo" />
+					</Link>
+					<ul className="flex items-center">
+						<li className="account relative">
+							<button className="py-5">
+								<li className="px-4 hover:bg-black">Accounts</li>
+							</button>
+							<ul className="account__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
+								{homeSubLinks.map((subLink, id) => {
+									return (
+										<li key={id} className="hover:bg-black inline-block py-3 px-4">
+											<Link href={subLink.link} className=" block">
+												{subLink.text}
+											</Link>
+										</li>
+									);
+								})}
+							</ul>
+						</li>
+						<li className="about relative">
+							<button className="py-5">
+								<li className="px-4 hover:bg-black">About</li>
+							</button>
+							<ul className="about__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
+								{aboutSubLinks.map((subLink, id) => {
+									return (
+										<li key={id} className="hover:bg-black inline-block ">
+											<Link href={subLink.link} className="py-3 px-4 block">
+												{subLink.text}
+											</Link>
+										</li>
+									);
+								})}
+							</ul>
+						</li>
+						<li className="relative trading">
+							<button className="py-5">
+								<li className="px-4 hover:bg-black">Trading</li>
+							</button>
+							<ul className="trading__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
+								{tradingSubLinks.map((subLink, id) => {
+									return (
+										<li key={id} className="hover:bg-black inline-block ">
+											<Link href={subLink.link} className="py-3 px-4 block">
+												{subLink.text}
+											</Link>
+										</li>
+									);
+								})}
+							</ul>
+						</li>
+						<li className="relative platform">
+							<button className="py-5">
+								<li className="px-4 hover:bg-black">Platforms</li>
+							</button>
+							<ul className="platform__sub absolute w-[300px] left-0 top-[65px] py-4 px-5 flex flex-col gap-3 bg-black3 min-w-screen transition">
+								{platformSubLinks.map((subLink, id) => {
+									return (
+										<li key={id} className="hover:bg-black inline-block ">
+											<Link href={subLink.link} className="py-3 px-4 block">
+												{subLink.text}
+											</Link>
+										</li>
+									);
+								})}
+							</ul>
+						</li>
+						{/* <li className="relative tools">
 						<button className="py-5">
 							<li className="px-4 hover:bg-black">Tools</li>
 						</button>
@@ -131,7 +134,7 @@ export default function DesktopNav() {
 							})}
 						</ul>
 					</li> */}
-					{/* <li className="relative news">
+						{/* <li className="relative news">
 						<button className="py-5">
 							<li className="px-4 hover:bg-black">News & Education</li>
 						</button>
@@ -147,16 +150,20 @@ export default function DesktopNav() {
 							})}
 						</ul>
 					</li> */}
-				</ul>
-				<div className="flex items-center gap-x-4">
-					<Link href="/login" className="rounded-[100px] py-2 px-5 border border-black2 bg-black1">
-						Sign In
-					</Link>
-					<Link href="/account" className="rounded-[100px] py-2 px-5 bg-green">
-						Create Account
-					</Link>
+					</ul>
+					<div className="flex items-center gap-x-4">
+						<Link
+							href="/login"
+							className="rounded-[100px] py-2 px-5 border border-black2 bg-black1"
+						>
+							Sign In
+						</Link>
+						<Link href="/signup" className="rounded-[100px] py-2 px-5 bg-green">
+							Create Account
+						</Link>
+					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</>
 	);
 }
