@@ -15,7 +15,7 @@ export default function AboutDetails() {
 						in your hand
 					</h2>
 					<p className="max-w-[80%] text-lg">
-						Formed in 2006, we’re a regulated, award-winning CFD provider here to take our client's
+						Formed in 2006, we're a regulated, award-winning CFD provider here to take our client's
 						experience further.
 					</p>
 					<br />
