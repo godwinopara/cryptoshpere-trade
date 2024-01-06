@@ -65,13 +65,13 @@ export default function MobileNav() {
 					{/* Auth btn */}
 					<div className="mb-5">
 						<Link
-							href="/login"
+							href="https://uct-dashboard.vercel.app/auth/login"
 							className="rounded-[100px] py-3 px-5 border border-black2 bg-black1 font-bold mb-5 w-[70%] lg:w-[40%] block mx-auto text-center"
 						>
 							Sign In
 						</Link>
 						<Link
-							href="/signup"
+							href="https://uct-dashboard.vercel.app/auth/signup"
 							className="rounded-[100px] py-3 px-5 bg-green font-bold mb-5 w-[70%] lg:w-[40%] block mx-auto text-center"
 						>
 							Create Account
