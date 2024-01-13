@@ -5,6 +5,7 @@ import hamburger from "public/images/hamburger.svg";
 import Image from "next/image";
 import Button from "./Button";
 import { useEffect } from "react";
+import logo from "public/images/logo.svg";
 
 export default function MobileNav() {
 	useEffect(() => {
@@ -24,9 +25,9 @@ export default function MobileNav() {
 			<div className="flex w-full flex-wrap items-center justify-between px-3">
 				<div className="flex w-full justify-between items-center py-3 ">
 					<div className="ml-2">
-						<a className="text-sm text-white md:text-xl" href="#">
-							Universal Cryptosphere Trade
-						</a>
+						<Link className="text-sm text-white md:text-xl" href="#">
+							<Image src={logo} alt="logo" />
+						</Link>
 					</div>
 					{/* <!-- Hamburger button for mobile view --> */}
 					<button
