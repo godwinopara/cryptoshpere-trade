@@ -34,7 +34,7 @@ export default function Hero() {
 			<VideoBackground>
 				<div className=" min-h-[85svh] md:min-h-[50svh] xl:min-h-[93vh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
 					<div className="px-6 xl:px-0 grid text-center lg:text-left lg:flex lg:gap-20 items-center max-w-desktop mx-auto">
-						<div className="mb-20 lg:mb-0 w-[55%]">
+						<div className="mb-20 lg:mb-0 xl:w-[55%]">
 							<div className="mb-10">
 								<h1 className="text-4xl  lg:text-90 lg:leading-120  mb-5">
 									Digital assets, investments and trading
