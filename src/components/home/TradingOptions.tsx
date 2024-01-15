@@ -27,13 +27,13 @@ export default function TradingOptions() {
 						img={forex}
 						title="Forex"
 						alt="forex icon"
-						description="Trade 50+ Currency Pairs with a leading global CFD provider"
+						description="Explore over 50 currency pairs with a top-tier global CFD provider"
 					/>
 					<TradingOptionsCard
 						img={cfd}
 						title="Share CFDs"
 						alt="cfds icon"
-						description="Go long or short on 200+ ASX shares, 80+ top US shares and HKEX shares"
+						description="Trade 200+ ASX, 80+ US, and HKEX shares – go long or short effortlessly. Diversify your portfolio with ease."
 					/>
 					<TradingOptionsCard
 						img={indices}
@@ -45,19 +45,19 @@ export default function TradingOptions() {
 						img={metals}
 						title="Metals"
 						alt="metals diagram"
-						description="Access a range of precious metal pairs through Limitless Trade Ltd"
+						description="Unlock precious opportunities with Universal Cryptosphere Trade. Explore a diverse range of precious metal pairs for seamless trading."
 					/>
 					<TradingOptionsCard
 						img={crypto}
 						title="Cryptocurrency"
 						alt="crypto signal diagram"
-						description="Avoid the complexities of a digital wallet, trade cryptocurrency from the same MT4 platform you use for trading"
+						description="Simplify your crypto trading experience. Trade cryptocurrencies seamlessly on the same MT4 platform you use for traditional trading, without the need for a digital wallet."
 					/>
 					<TradingOptionsCard
 						img={commodities}
 						title="Commodities"
 						alt="diagram of commodity"
-						description="Trade one of the world’s most heavily-traded markets"
+						description="Step into the dynamic world of global trading in one of the most heavily-traded markets. Explore opportunities, navigate fluctuations, and make informed decisions as you immerse yourself in this bustling environment."
 					/>
 				</div>
 			</div>

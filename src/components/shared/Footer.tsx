@@ -21,39 +21,39 @@ export default function Footer() {
 		{ link: "/about", text: "About Us" },
 		{ link: "/document", text: "Legal Documents" },
 		{ link: "/contact", text: "Contact Us" },
-		{ link: "/privacy-policy", text: "Privacy Policy" },
-		{ link: "/terms", text: "Terms and Condition" },
-		{ link: "/statements", text: "Disclosure Statements" },
+		// { link: "/privacy-policy", text: "Privacy Policy" },
+		// { link: "/terms", text: "Terms and Condition" },
+		// { link: "/statements", text: "Disclosure Statements" },
 	];
 
 	const tradingSubLinks = [
 		{ link: "/product", text: "Product Overview" },
-		{ link: "/forex", text: "Forex CFDs" },
-		{ link: "/share", text: "Share CFDs" },
-		{ link: "/index", text: "Index CFDs" },
-		{ link: "/metal", text: "Metal CFDs" },
-		{ link: "/commodity", text: "Commodity CFDs" },
+		// { link: "/forex", text: "Forex CFDs" },
+		// { link: "/share", text: "Share CFDs" },
+		// { link: "/index", text: "Index CFDs" },
+		// { link: "/metal", text: "Metal CFDs" },
+		// { link: "/commodity", text: "Commodity CFDs" },
 	];
 	const platformSubLinks = [
 		{ link: "/platforms", text: "Platforms Overview" },
-		{ link: "/metatrader4", text: "MetaTrader 4" },
-		{ link: "/metatrader5", text: "MetaTrader 5" },
-		{ link: "/mobile-trading", text: "Mobile trading platforms" },
-		{ link: "/webtrader", text: "Web Trader" },
+		// { link: "/metatrader4", text: "MetaTrader 4" },
+		// { link: "/metatrader5", text: "MetaTrader 5" },
+		// { link: "/mobile-trading", text: "Mobile trading platforms" },
+		// { link: "/webtrader", text: "Web Trader" },
 	];
-	const toolsSubLinks = [
-		{ link: "/autochartist", text: "Autochartist" },
-		{ link: "genesis", text: "Genesis" },
-		{ link: "/vps", text: "VPS" },
-		{ link: "/trading-central", text: "Trading Central" },
-		{ link: "/a-quant", text: "A-Quant" },
-		{ link: "/fxbook", text: "MyFxBook" },
-	];
-	const newsSubLinks = [
-		{ link: "/news-analysis", text: "News & Analysis" },
-		{ link: "/education-hub", text: "Education Hub" },
-		{ link: "/economic-calendar", text: "Economic Calendar" },
-	];
+	// const toolsSubLinks = [
+	// 	{ link: "/autochartist", text: "Autochartist" },
+	// 	{ link: "genesis", text: "Genesis" },
+	// 	{ link: "/vps", text: "VPS" },
+	// 	{ link: "/trading-central", text: "Trading Central" },
+	// 	{ link: "/a-quant", text: "A-Quant" },
+	// 	{ link: "/fxbook", text: "MyFxBook" },
+	// ];
+	// const newsSubLinks = [
+	// 	{ link: "/news-analysis", text: "News & Analysis" },
+	// 	{ link: "/education-hub", text: "Education Hub" },
+	// 	{ link: "/economic-calendar", text: "Economic Calendar" },
+	// ];
 
 	return (
 		<>
@@ -105,8 +105,8 @@ export default function Footer() {
 							<FooterNavWrapper title="About" links={aboutSubLinks} />
 							<FooterNavWrapper title="Trading" links={tradingSubLinks} />
 							<FooterNavWrapper title="Platforms" links={platformSubLinks} />
-							<FooterNavWrapper title="Tools" links={toolsSubLinks} />
-							<FooterNavWrapper title="News & Education" links={newsSubLinks} />
+							{/* <FooterNavWrapper title="Tools" links={toolsSubLinks} />
+							<FooterNavWrapper title="News & Education" links={newsSubLinks} /> */}
 						</div>
 					</div>
 					<hr />

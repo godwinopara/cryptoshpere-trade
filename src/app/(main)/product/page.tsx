@@ -45,7 +45,7 @@ export default function Product() {
 		{
 			title: "Metal CFDs",
 			description:
-				"With values driven by supply and demand, precious metals are a fast-moving global market. Limitless Trade Ltd lets you trade metals like Gold and Silver with the benefit of award-winning technology, informative broker data, competitive spreads and low margins.",
+				"With values driven by supply and demand, precious metals are a fast-moving global market. Universal Cryptosphere Trade lets you trade metals like Gold and Silver with the benefit of award-winning technology, informative broker data, competitive spreads and low margins.",
 			options: [
 				"Access a range of precious metal pairs",
 				"Trade without buying physical metals",

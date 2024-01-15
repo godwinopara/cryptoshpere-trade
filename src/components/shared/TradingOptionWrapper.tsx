@@ -31,7 +31,7 @@ export default function TradingOptionWrapper() {
 				img={metals}
 				title="Metals"
 				alt="metals diagram"
-				description="Access a range of precious metal pairs through Limitless Trade Ltd"
+				description="Access a range of precious metal pairs through Universal Cryptosphere Trade"
 			/>
 			<TradingOptionsCard
 				img={crypto}

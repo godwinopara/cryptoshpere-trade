@@ -175,8 +175,9 @@ export default function TradeWithUs() {
 						By making significant investments in world-leading technology, we can actively manage
 						the path your trade takes through the Internet, ensuring your trade takes the least
 						congested and therefore fastest route every time. Combined with the ability to speed up
-						the client-side of your MT4 platform, when you execute with Limitless Trade Ltd you can
-						be confident your trade will be delivered faster than with typical ECN technologies.
+						the client-side of your MT4 platform, when you execute with Universal Cryptosphere Trade
+						you can be confident your trade will be delivered faster than with typical ECN
+						technologies.
 					</p>
 				</div>
 				<div>

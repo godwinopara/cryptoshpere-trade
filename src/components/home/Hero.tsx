@@ -6,18 +6,18 @@ import Button from "../shared/Button";
 export default function Hero() {
 	return (
 		<>
-			<div className="bg-black bg-pattern min-h-[85svh] md:min-h-[50svh] xl:min-h-[85svh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
+			<div className="bg-black bg-pattern min-h-[85svh] md:min-h-[50svh] xl:min-h-[90vh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
 				<div className="px-6 xl:px-0 grid text-center lg:text-left lg:grid-cols-2 lg:gap-20 items-center max-w-desktop mx-auto">
 					<div className="mb-20 lg:mb-0">
 						<div className="mb-10">
 							<h1 className="text-4xl  lg:text-90 lg:leading-120  mb-5">
-								Explore global markets differently
+								Digital assets, investments and trading
 							</h1>
 							<p className="text-lg mb-4 xl:text-xl">
-								Trade the markets with our secure software and stay on top of your account. Trade
-								anywhere, anytime and from any device
+								Join millions of users, from beginners to professionals, who use Universal
+								Cryptosphere Trade to purchase crypto, trade, and manage their investments in a
+								smarter way.
 							</p>
-							<p className="text-md">*Investment Trends worldwide Leverage Trading Report 2022.</p>
 						</div>
 						<div className="lg:flex items-center gap-2">
 							<Button btnText="Create Account" className="bg-green" />

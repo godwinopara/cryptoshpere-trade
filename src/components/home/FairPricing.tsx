@@ -35,21 +35,21 @@ export default function FairPricing() {
 					<p>
 						Universal Cryptosphere Trade aims to be the number retail Crypto Company in the world
 						for pricing and execution across all forex and metals. This is to say that your trades,
-						executed with Limitless Trade Ltd, will be as good or better than any other retail
-						Crypto Company in the world.
+						executed with Universal Cryptosphere Trade, will be as good or better than any other
+						retail Crypto Company in the world.
 					</p>
 					<br />
 					<p>
 						Universal Cryptosphere Trade uses ‘non-bank market makers’ and other Crypto Companys to
-						price and execute Index and Commodity CFD trades. Limitless Trade Ltd earns a percentage
-						of the spread after hedging costs from these trading counterparties. These
-						counterparties do not run a B-book for Limitless Trade Ltd.
+						price and execute Index and Commodity CFD trades. Universal Cryptosphere Trade earns a
+						percentage of the spread after hedging costs from these trading counterparties. These
+						counterparties do not run a B-book for Universal Cryptosphere Trade.
 					</p>
 					<br />
 					<p>
-						Make investments using popular digital currencies with Limitless Trade Ltd! With
-						Limitless Trade Ltd you can make investments using popular digital currencies like
-						Bitcoin, Ethereum and Tether (USDT) amongst others.
+						Make investments using popular digital currencies with Universal Cryptosphere Trade!,
+						With Universal Cryptosphere Trade you can make investments using popular digital
+						currencies like Bitcoin, Ethereum and Tether (USDT) amongst others.
 					</p>
 				</div>
 			</div>

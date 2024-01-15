@@ -12,8 +12,8 @@ export default function Services() {
 				<p className="lg:max-w-[70%] xl:max-w-[50%] text-lg">
 					We offer over 350 tradable CFD instruments including Forex, Crypto, Indices and
 					Commodities. Widely recognised as Australia’s first MT4 broker, we’ve since added MT5,
-					mobile trading and a web-based version to our trading platform suite. Limitless Trade Ltd
-					offers spread-based and commission-based accounts.
+					mobile trading and a web-based version to our trading platform suite. Universal
+					Cryptosphere Trade offers spread-based and commission-based accounts.
 				</p>
 			</div>
 

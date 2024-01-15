@@ -10,9 +10,9 @@ export default function WhyTradeCrypto() {
 					Why Trade Cryptocurrency?
 				</h2>
 				<p className="mb-10 text-center lg:text-left">
-					The cryptocurrency market is usually available to trade 24 hours a day, seven days a week
-					because there is no centralised governance of the market. Cryptocurrency transactions take
-					place directly between individuals, on cryptocurrency exchanges all over the world.
+					The cryptocurrency market operates around the clock, seven days a week, thanks to its
+					decentralized nature. Cryptocurrency transactions occur directly between individuals on
+					exchanges across the globe.
 				</p>
 				<div>
 					<div>

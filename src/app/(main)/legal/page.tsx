@@ -87,8 +87,8 @@ export default function Legal() {
 						<br />
 						<p>
 							Information on this site is not directed at residents in any country or jurisdiction
-							where such distribution or use would be contrary to local law or regulation. Limitless
-							Trade Ltd Pty Ltd (MU) is a GBC, authorised and regulated by the Financial Services
+							where such distribution or use would be contrary to local law or regulation. Universal
+							Cryptosphere Trade (MU) is a GBC, authorised and regulated by the Financial Services
 							Commission (FSC) of Mauritius as an Investment Dealer (Full Service Dealer, excluding
 							Underwriting).
 						</p>

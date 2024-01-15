@@ -18,10 +18,12 @@ export default function WhyChooseUs() {
 						Why Universal Cryptosphere Trade?
 					</h2>
 					<p className="lg:max-w-[70%] mx-auto leading-7 mb-24 text-xl">
-						Universal Cryptosphere Trade is not fully automated. We have human discretionary traders
-						and we do make hedge execution decisions based on client trading behaviour or account
-						profitability. Over 600 products, tight spreads, transparent pricing, powerful
-						platforms. Backed by unmatched support.
+						At Universal Cryptosphere Trade, our trading approach seamlessly combines the insights
+						of experienced human discretionary traders with strategic hedge execution decisions
+						driven by client trading behavior and account performance. We boast an extensive range
+						of more than 600 products, featuring narrow spreads, transparent pricing, and robust
+						platforms. Supported by an exceptional level of customer service, we are dedicated to
+						providing an unmatched trading experience for our clients.
 					</p>
 				</div>
 				<div className="grid md:grid-cols-2 gap-3 xl:grid-cols-4 xl:gap-8">
