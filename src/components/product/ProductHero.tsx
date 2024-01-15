@@ -10,10 +10,12 @@ export default function ProductHero() {
 					<div className="mb-10">
 						<h1 className="text-4xl  lg:text-90 lg:leading-120  mb-5">Products</h1>
 						<p className="text-lg mb-4'                                                                                                                                                                                                                       :text-xl">
-							Access 600+ products. Tight spreads, low pricing. FX, share CFDs, indices, metals and
-							more. Let your trading go further.
+							Discover the extensive array of possibilities with over 600 products available for
+							trading. Benefit from tight spreads and competitive pricing across a diverse range of
+							financial instruments, including FX, share CFDs, indices, metals, and more. Elevate
+							your trading experience and let the multitude of options empower your investment
+							journey.
 						</p>
-						<p className="text-md">*Investment Trends worldwide Leverage Trading Report 2022.</p>
 					</div>
 					<div className="lg:flex items-center gap-2">
 						<Button btnText="Create Account" className="bg-green" />
