@@ -19,7 +19,7 @@ export default function MobileNav() {
 	return (
 		// <!-- Main navigation container -->
 		<nav
-			className="relative flex w-full flex-nowrap items-center justify-between bg-black3 py-2 text-white shadow-lg hover:text-neutral-700 focus:text-neutral-700 xl:hidden"
+			className="z-50 relative flex w-full flex-nowrap items-center justify-between bg-black3 py-3 text-white shadow-lg hover:text-neutral-700 focus:text-neutral-700 xl:hidden"
 			data-te-navbar-ref
 		>
 			<div className="flex w-full flex-wrap items-center justify-between px-3">
