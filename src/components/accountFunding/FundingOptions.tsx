@@ -63,8 +63,8 @@ export default function FundingOptions() {
 					</p>
 					<br />
 					Payments to and from international banking institution may attract intermediary transfer
-					fees and/or conversion fees from either party which are independent of Limitless Trade
-					Ltd.Any such fees will be the responsibility of the client.
+					fees and/or conversion fees from either party which are independent of Universal
+					Cryptosphere Trade.Any such fees will be the responsibility of the client.
 				</div>
 			</div>
 		</section>

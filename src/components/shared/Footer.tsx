@@ -3,6 +3,8 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
+import logo from "public/images/logo.svg";
+import Image from "next/image";
 
 export default function Footer() {
 	const pathName = usePathname();
@@ -61,8 +63,8 @@ export default function Footer() {
 				<div className="max-w-desktop mx-auto">
 					<div className="lg:flex justify-between">
 						<div className="w-full lg:w-[47%]">
-							<Link href="/" className="uppercase text-xl pb-5 block font-bold lg:text-xl">
-								Universal Cryptosphere Trade
+							<Link href="/" className="uppercase text-xl pb-5 mb-5 block font-bold lg:text-xl">
+								<Image src={logo} alt="logo" />
 							</Link>
 							<div className="flex items-center gap-5 pb-10 text-xl ">
 								<div className="flex items-center justify-center rounded-[50%] h-10 w-10 bg-green">
@@ -94,7 +96,7 @@ export default function Footer() {
 							<div>
 								<p className="w-full lg:w-[60%]">
 									This website is owned and operated by <br />
-									Universal Cryptosphere Trade. All rights reserved. <br /> <br />© 2023 Universal
+									Universal Cryptosphere Trade. All rights reserved. <br /> <br />© 2024 Universal
 									Cryptosphere Trade (MU).
 								</p>
 							</div>
