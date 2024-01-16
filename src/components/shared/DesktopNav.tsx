@@ -153,13 +153,13 @@ export default function DesktopNav() {
 					</ul>
 					<div className="flex items-center gap-x-4">
 						<Link
-							href="https://uct-dashboard.vercel.app/auth/login"
+							href="https://universalcryptospheredashboard.vercel.app/auth/login"
 							className="rounded-[100px] py-2 px-5 border border-black2 bg-black1"
 						>
 							Sign In
 						</Link>
 						<Link
-							href="https://uct-dashboard.vercel.app/auth/signup"
+							href="https://universalcryptospheredashboard.vercel.app/auth/signup"
 							className="rounded-[100px] py-2 px-5 bg-green"
 						>
 							Create Account

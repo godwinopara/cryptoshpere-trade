@@ -106,6 +106,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 		// Clean up the interval when the component is unmounted
 		return () => clearTimeout(intervalId);
+
+		//eslint-disable-next-line
 	}, [randomSentence]);
 
 	useEffect(() => {
@@ -113,6 +115,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			// Only notify and show toast if randomSentence is not empty
 			notify();
 		}
+
+		//eslint-disable-next-line
 	}, [randomSentence]);
 
 	return (
