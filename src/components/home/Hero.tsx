@@ -34,7 +34,7 @@ export default function Hero() {
 
 			<div className="relative xl:min-h-[90vh]">
 				<VideoBackground>
-					<div className="min-h-[85vh] md:min-h-[50svh] xl:min-h-[90vh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
+					<div className="min-h-[85vh] md:min-h-[50svh] xl:min-h-[95vh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
 						<div className="px-6 xl:px-0 grid text-center lg:text-left lg:flex lg:gap-20 items-center max-w-desktop mx-auto">
 							<div className="mb-20 lg:mb-0 xl:w-[55%]">
 								<div className="mb-10">
@@ -55,7 +55,9 @@ export default function Hero() {
 					</div>
 				</VideoBackground>
 			</div>
-			<TickerTape colorTheme="light"></TickerTape>
+			<div className="relative z-50">
+				<TickerTape colorTheme="light"></TickerTape>
+			</div>
 		</>
 	);
 }
