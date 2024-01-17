@@ -6,7 +6,9 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-// import Toast from "@/components/toast/Toast";
+// import Toast from "@/components/toast/Toast";\
+import { Helmet } from "react-helmet";
+import Script from "next/script";
 
 const metadata: Metadata = {
 	title: "Create Next App",
@@ -126,6 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Navbar />
 				<main>{children}</main>
 				<Footer />
+				<Script src="//code.tidio.co/qexf9v18mxrecrfy0fpcbxh42i89ldkl.js" async />
 			</body>
 		</html>
 	);

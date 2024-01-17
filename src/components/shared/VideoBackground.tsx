@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useRef } from "react";
-
+import herobg from "public/images/hero-bg.jpg";
 export default function VideoBackground({ children }: { children: ReactNode }) {
 	const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -34,9 +34,11 @@ export default function VideoBackground({ children }: { children: ReactNode }) {
 				autoPlay
 				loop
 				muted
+				preload="auto"
+				poster="/images/hero-bg.jpg"
 				className="w-full h-full object-cover absolute top-0 xl:top-18 left-0 z-0"
 			>
-				<source src="./video/bg-video.mp4" type="video/mp4" />
+				<source src="./video/video2.mp4" type="video/mp4" />
 			</video>
 			<div className="z-10 relative">{children}</div>
 		</div>
