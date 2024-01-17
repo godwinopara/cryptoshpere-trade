@@ -14,7 +14,9 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Your Website Title</title>
+				<title>
+					Trade global CFD markets. Forex, Indices &amp; more. Universal Cryptosphere Trade.
+				</title>
 				<meta
 					name="description"
 					content="Forex Broker offering Forex, Indices, Commodities and Share CFDs. Powerful platforms, trading resources and more."
