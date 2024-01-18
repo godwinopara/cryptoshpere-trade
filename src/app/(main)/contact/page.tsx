@@ -28,7 +28,7 @@ export default function Contact() {
 							<div className="mb-5">
 								<Image src={email} alt="email logo" className="w-[15%] mb-4" />
 								<h3 className="font-bold  mb-3">Email</h3>
-								<p>info@universalcryptospheretrade.com</p>
+								<p>support@universalcryptosphere.com</p>
 							</div>
 							<div className="mb-5">
 								<Image src={location} alt="location logo" className="w-[15%] mb-4" />
