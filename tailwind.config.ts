@@ -155,6 +155,7 @@ const config: Config = {
 				success: "#219653",
 				danger: "#D34053",
 				warning: "#FFA70B",
+				notify: "rgb(47, 150, 180)",
 			},
 			maxWidth: {
 				desktop: "1240px",

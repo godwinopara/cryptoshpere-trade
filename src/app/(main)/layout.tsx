@@ -6,9 +6,9 @@ import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-// import Toast from "@/components/toast/Toast";\
-import { Helmet } from "react-helmet";
 import Script from "next/script";
+import { FaRocketchat } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
 const metadata: Metadata = {
 	title: "Create Next App",
@@ -73,24 +73,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<div
 					className={`${
 						t.visible ? "animate-enter" : "animate-leave"
-					} max-w-xs w-full bg-black text-white opacity-70 shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+					} max-w-[19rem] w-full bg-notify opacity-80 text-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
 				>
-					<div className="flex-1 w-0 p-4">
+					<div className="flex-1 w-0 p-3">
 						<div className="flex items-start">
-							<div className="ml-3 flex-1">
-								<h4>Recent withdrawal!</h4>
-								<p className="mt-1 text-sm text-gray-500">{randomSentence}</p>
+							<div className="flex-1">
+								<div className="flex gap-x-3 items-center">
+									<div className="text-2xl">
+										<FaRocketchat />
+									</div>
+									<div>
+										<div className="flex justify-between items-center">
+											<h4 className="font-bold text-xl">Recent withdrawal!</h4>
+											<button
+												onClick={() => toast.dismiss()}
+												className="flex items-center justify-center text-xl font-bold"
+											>
+												<IoMdClose />
+											</button>
+										</div>
+										<p className="mt-1 text-gray-500 text-lg">{randomSentence}</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					{/* <div className="flex border-l border-gray-200">
-						<button
-							onClick={() => toast.dismiss(t.id)}
-							className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-						>
-							Close
-						</button>
-					</div> */}
 				</div>
 			),
 			{
