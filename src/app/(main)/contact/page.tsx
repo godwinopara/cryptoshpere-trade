@@ -33,9 +33,7 @@ export default function Contact() {
 							<div className="mb-5">
 								<Image src={location} alt="location logo" className="w-[15%] mb-4" />
 								<h3 className="font-bold mb-3">Head Office</h3>
-								<p className="xl:w-full">
-									Level 7 Office 12, ICONEBENE Lot B441, Rue de L’Institut Ebene
-								</p>
+								<p className="xl:w-full">6 Rue Cambacérès, 75008 Paris, France</p>
 							</div>
 							<div className="mb-5">
 								<Image src={verified} alt="verified logo" className="w-[15%] mb-4" />
