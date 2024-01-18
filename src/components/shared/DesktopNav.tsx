@@ -8,7 +8,7 @@ export default function DesktopNav() {
 		{ link: "/accountfunding", text: "Account Funding / Withdrawal" },
 		{ link: "/spread", text: "Spreads" },
 		{ link: "/referral", text: "Referral Program" },
-		{ link: "/affiliate", text: "Affiliate" },
+		// { link: "/affiliate", text: "Affiliate" },
 	];
 
 	const aboutSubLinks = [
@@ -48,7 +48,7 @@ export default function DesktopNav() {
 
 	return (
 		<>
-			<nav className="hidden xl:block bg-black3 fixed right-0 left-0 top-0 text-white px-4 py-2 xl:px-0 z-50">
+			<nav className="hidden xl:block bg-black3 fixed right-0 left-0 top-0 text-white px-4 py-2 xl:px-0 z-[100]">
 				<div className="flex justify-between items-center max-w-desktop mx-auto">
 					<Link className="font-extrabold uppercase" href="/">
 						<Image src={logo} alt="logo" />

@@ -29,7 +29,7 @@ export default function MobileNav() {
 	return (
 		// <!-- Main navigation container -->
 		<nav
-			className="z-50 relative flex w-full flex-nowrap items-center justify-between bg-black3 py-4 text-white shadow-lg hover:text-neutral-700 focus:text-neutral-700 xl:hidden"
+			className="z-[100] relative flex w-full flex-nowrap items-center justify-between bg-black3 py-4 text-white shadow-lg hover:text-neutral-700 focus:text-neutral-700 xl:hidden"
 			data-te-navbar-ref
 		>
 			<div className="flex w-full flex-wrap items-center justify-between px-3">
@@ -124,9 +124,9 @@ export default function MobileNav() {
 									<li className="block rounded-lg p-2">
 										<Link href="/referral">Referral Program</Link>
 									</li>
-									<li className="block rounded-lg p-2">
+									{/* <li className="block rounded-lg p-2">
 										<Link href="/affiliate">Affiliate</Link>
-									</li>
+									</li> */}
 								</ul>
 
 								{/* ============== About =============== */}

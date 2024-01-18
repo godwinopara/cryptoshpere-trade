@@ -9,7 +9,7 @@ export default function Contact() {
 	return (
 		<>
 			<div className="max-w-desktop mx-auto py-20">
-				<div className="mb-32">
+				<div className="my-32">
 					<h1 className="font-bold text-5xl mb-5 text-center">Contact Us</h1>
 					<p className="text-lg xl:w-1/2 px-6 mx-auto text-center">
 						The multilingual team at Universal Cryptosphere Trade are here to help 24 hours a day,
@@ -54,7 +54,7 @@ export default function Contact() {
 					<div>
 						<form>
 							<div className="mb-10 xl:mb-0 md:flex md:gap-x-10">
-								<div className="mb-10">
+								<div className="mb-10 w-full">
 									<label htmlFor="firstname" className="block mb-3 font-bold">
 										First Name<span className="text-red-700">*</span>
 									</label>
@@ -64,25 +64,25 @@ export default function Contact() {
 										className="border py-2 px-3 rounded-md  w-full"
 									/>
 								</div>
-								<div className="">
+								<div className="w-full">
 									<label htmlFor="lastname" className="block mb-3 font-bold">
 										Last Name<span className="text-red-700">*</span>
 									</label>
 									<input
 										type="text"
 										name="lastname"
-										className="border py-2 px-3 rounded-md w-1/2"
+										className="border py-2 px-3 rounded-md w-full"
 									/>
 								</div>
 							</div>
 							<div className="mb-10 xl:mb-0 md:flex md:gap-x-10">
-								<div className="mb-10">
+								<div className="mb-10 w-full">
 									<label htmlFor="email" className="block mb-3 font-bold">
 										Email<span className="text-red-700">*</span>
 									</label>
 									<input type="text" name="email" className="border py-2 px-3 rounded-md w-full" />
 								</div>
-								<div>
+								<div className="w-full">
 									<label htmlFor="phone" className="block mb-3 font-bold">
 										Phone Number<span className="text-red-700">*</span>
 									</label>

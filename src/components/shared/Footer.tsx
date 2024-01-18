@@ -14,7 +14,7 @@ export default function Footer() {
 		{ link: "/accountfunding", text: "Account Funding / Withdrawal" },
 		{ link: "/spread", text: "Spreads" },
 		{ link: "/referral", text: "Referral Program" },
-		{ link: "/affiliate", text: "Affiliate" },
+		// { link: "/affiliate", text: "Affiliate" },
 		{ link: "/support", text: "Quick Support" },
 		{ link: "/holiday-trading", text: "Holiday Trading Hour" },
 	];

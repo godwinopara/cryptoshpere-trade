@@ -4,7 +4,7 @@ import bitcoin from "public/images/bitcoin-logo.svg";
 
 export default function AccountFundingHero() {
 	return (
-		<section className="px-6 bg-black text-white1 min-h-[60vh] flex items-center lg:min-h-[35vh] xl:min-h-[60vh] xl:px-0">
+		<section className="px-6 bg-black text-white1 min-h-[60vh] flex items-center lg:min-h-[35vh] xl:min-h-[80vh] xl:px-0">
 			<div className="max-w-desktop mx-auto lg:flex items-center justify-between w-full">
 				<div className="mb-10 xl:mb-0">
 					<h1 className="text-4xl text-center xl:text-left xl:text-5xl text-bold mb-8">

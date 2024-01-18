@@ -11,7 +11,7 @@ import mobile from "public/images/trading-mobile.png";
 export default function Spreads() {
 	return (
 		<>
-			<section className="bg-black bg-pattern min-h-[85svh] md:min-h-[50svh] xl:min-h-[85svh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
+			<section className="bg-black bg-pattern min-h-[85vh] md:min-h-[50vh] xl:min-h-[100vh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
 				<div className="px-6 xl:px-0 grid text-center lg:text-left lg:grid-cols-2 lg:gap-20 items-center max-w-desktop mx-auto">
 					<div className="mb-20 lg:mb-0">
 						<div className="mb-10">
