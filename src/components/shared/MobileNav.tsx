@@ -12,7 +12,6 @@ export default function MobileNav() {
 	const pathname = usePathname();
 
 	const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-	const [refresh, setRefresh] = useState(0);
 
 	useEffect(() => {
 		const init = async () => {
@@ -130,17 +129,16 @@ export default function MobileNav() {
 								</ul>
 
 								{/* ============== About =============== */}
-								<Link
+								<div
 									className="inline-block px-2  pb-2 pt-2.5 font-medium  text-white transition duration-150 ease-in-out lg:text-xl lg:pl-5"
 									data-te-collapse-init
 									data-te-ripple-init
-									href="#abt"
 									role="button"
 									aria-expanded="false"
 									aria-controls="abt"
 								>
 									About
-								</Link>
+								</div>
 
 								<ul
 									className="!visible hidden px-8 py-4 bg-boxdark text-white"
