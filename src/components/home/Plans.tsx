@@ -7,6 +7,7 @@ import spark from "public/images/spark.svg";
 import trading from "public/images/trading.svg";
 import userProfile from "public/images/user-profile.svg";
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Plans() {
 	return (
@@ -115,10 +116,12 @@ export default function Plans() {
 							CHF
 						</li>
 					</ul>
-					<Button
-						btnText="Start Earning"
-						className="border border-black text-lg py-4 rounded-md w-full"
-					/>
+					<Link href="https://universalcryptospheredashboard.vercel.app/auth/login">
+						<Button
+							btnText="Start Earning"
+							className="border border-black text-lg py-4 rounded-md w-full"
+						/>
+					</Link>
 				</div>
 				<div className="bg-green py-14 px-10 text-black border border-t-4">
 					<h3 className="font-bold text-2xl mb-5">Standard Account</h3>
@@ -176,7 +179,12 @@ export default function Plans() {
 							CHF
 						</li>
 					</ul>
-					<Button btnText="Start Earning" className="bg-[#e8f369] text-xl py-4 rounded-md w-full" />
+					<Link href="https://universalcryptospheredashboard.vercel.app/auth/login">
+						<Button
+							btnText="Start Earning"
+							className="bg-[#e8f369] text-xl py-4 rounded-md w-full"
+						/>
+					</Link>
 				</div>
 			</div>
 		</section>

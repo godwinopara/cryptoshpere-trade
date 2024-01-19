@@ -15,6 +15,7 @@ const config: Config = {
 				pattern2: "url('/images/pattern-2.png')",
 				greenpatten: "url('/images/green-pattern.png')",
 				pattern3: "url('/images/pattern-3.webp')",
+				forexbg: "url('/images/forex-img.jpg')",
 			},
 			spacing: {
 				4.5: "1.125rem",

@@ -9,6 +9,7 @@ import oilIcon from "public/images/oil-icon@2x.png";
 import ProductCard from "@/components/product/ProductCard";
 import Procedures from "@/components/shared/Procedures";
 import ProductHero from "@/components/product/ProductHero";
+import Link from "next/link";
 
 export default function Product() {
 	const products = [
@@ -123,11 +124,13 @@ export default function Product() {
 			</section>
 			<section className="text-black py-20">
 				<h2 className="text-2xl mb-20 font-bold lg:mb-32 text-center lg:text-4xl">
-					Start Trading with Universal Cryptosphere Trade
+					Start Earning with Universal Cryptosphere Trade
 				</h2>
 				<Procedures />
 				<div className="flex justify-center mt-20">
-					<Button btnText="Open Account" className="bg-green mx-auto h-[60px] w-[300px]" />
+					<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+						<Button btnText="Open Account" className="bg-green mx-auto h-[60px] w-[300px]" />
+					</Link>
 				</div>
 			</section>
 		</>

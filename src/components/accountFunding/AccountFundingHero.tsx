@@ -1,5 +1,6 @@
 import Button from "@/components/shared/Button";
 import Image from "next/image";
+import Link from "next/link";
 import bitcoin from "public/images/bitcoin-logo.svg";
 
 export default function AccountFundingHero() {
@@ -11,8 +12,12 @@ export default function AccountFundingHero() {
 						Funding and Withdrawal
 					</h1>
 					<div className="flex justify-center gap-5 lg:justify-start">
-						<Button btnText="Sign in" className="border" />
-						<Button btnText="Create Account" className="bg-green" />
+						<Link href="https://universalcryptospheredashboard.vercel.app/auth/login">
+							<Button btnText="Sign in" className="border" />
+						</Link>
+						<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+							<Button btnText="Create Account" className="bg-green" />
+						</Link>
 					</div>
 				</div>
 				<div className="flex justify-center">

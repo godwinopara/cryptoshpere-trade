@@ -6,6 +6,7 @@ import FutureSpread from "@/components/spread/FutureSpread";
 import IndiceSpread from "@/components/spread/IndiceSpread";
 import MetalSpread from "@/components/spread/MetalSpread";
 import Image from "next/image";
+import Link from "next/link";
 import mobile from "public/images/trading-mobile.png";
 
 export default function Spreads() {
@@ -23,7 +24,9 @@ export default function Spreads() {
 							<p className="text-md">*Investment Trends worldwide Leverage Trading Report 2022.</p>
 						</div>
 						<div className="lg:flex items-center gap-2">
-							<Button btnText="Create Account" className="bg-green" />
+							<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+								<Button btnText="Create Account" className="bg-green" />
+							</Link>
 						</div>
 					</div>
 					<div>
@@ -52,7 +55,9 @@ export default function Spreads() {
 							<p className="mb-5">
 								Raw spreads from 0.0 pips and a great low commission of just USD 2.5 per side
 							</p>
-							<Button btnText="Find Out More" className="border" />
+							<Link href="https://universalcryptospheredashboard.vercel.app/auth/login">
+								<Button btnText="Find Out More" className="border" />
+							</Link>
 						</div>
 					</div>
 					<ForexSpread />

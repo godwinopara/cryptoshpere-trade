@@ -57,7 +57,7 @@ export default function Hero() {
 					REFERRAL PARTNER BONUS PROMOTION
 				</button>
 				<VideoBackground>
-					<div className="min-h-[85vh] md:min-h-[50svh] xl:min-h-[80vh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
+					<div className="min-h-[85vh] md:min-h-[50svh] xl:min-h-[85vh] flex items-center  bg-right text-white1 pt-10 xl:pb-10">
 						<div className="px-6 xl:px-0 grid text-center lg:text-left lg:flex lg:gap-20 items-center max-w-desktop mx-auto">
 							<div className="mb-20 lg:mb-0 xl:w-[55%]">
 								<div className="mb-10">
@@ -71,7 +71,9 @@ export default function Hero() {
 									</p>
 								</div>
 								<div className="lg:flex items-center gap-2">
-									<Button btnText="Create Account" className="bg-green" />
+									<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+										<Button btnText="Create Account" className="bg-green" />
+									</Link>
 								</div>
 							</div>
 						</div>

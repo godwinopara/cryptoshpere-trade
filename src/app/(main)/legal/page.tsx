@@ -19,7 +19,9 @@ export default function Legal() {
 							<p className="text-md">*Investment Trends worldwide Leverage Trading Report 2022.</p>
 						</div>
 						<div className="lg:flex items-center gap-2">
-							<Button btnText="Create Account" className="bg-green" />
+							<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+								<Button btnText="Create Account" className="bg-green" />
+							</Link>
 						</div>
 					</div>
 					<div>
@@ -99,7 +101,7 @@ export default function Legal() {
 						<h3 className="font-bold text-xl mb-3">We’re here to help</h3>
 						<p>Call or email</p>
 						<p>
-							<strong>info@universalcryptospheretrade.com</strong> to talk about opening a trading
+							<strong>support@universalcryptosphere.com</strong> to talk about opening a trading
 							account.
 						</p>
 						<br />

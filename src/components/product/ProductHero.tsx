@@ -1,5 +1,6 @@
 import Button from "@/components/shared/Button";
 import Image from "next/image";
+import Link from "next/link";
 import heroImg from "public/images/funding-bg.png";
 
 export default function ProductHero() {
@@ -18,7 +19,9 @@ export default function ProductHero() {
 						</p>
 					</div>
 					<div className="lg:flex items-center gap-2">
-						<Button btnText="Create Account" className="bg-green" />
+						<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+							<Button btnText="Create Account" className="bg-green" />
+						</Link>
 					</div>
 				</div>
 				<div>

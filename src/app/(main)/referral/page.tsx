@@ -2,6 +2,7 @@ import Button from "@/components/shared/Button";
 import Image from "next/image";
 import mobile from "public/images/trading-mobile.png";
 import referral from "public/images/referral.webp";
+import Link from "next/link";
 
 export default function Referral() {
 	return (
@@ -16,7 +17,9 @@ export default function Referral() {
 							</p>
 						</div>
 						<div className="lg:flex items-center gap-2">
-							<Button btnText="Create Account" className="bg-green" />
+							<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+								<Button btnText="Create Account" className="bg-green" />
+							</Link>
 						</div>
 					</div>
 					<div>
@@ -59,7 +62,9 @@ export default function Referral() {
 				<p>Join Universal Cryptosphere Trade today, one of the the best Forex brokers.</p>
 				<br />
 				<div>
-					<Button btnText="Sign Up as a Referral Partner" className="bg-green text-white" />
+					<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+						<Button btnText="Sign Up as a Referral Partner" className="bg-green text-white" />
+					</Link>
 				</div>
 				<br />
 				<div>

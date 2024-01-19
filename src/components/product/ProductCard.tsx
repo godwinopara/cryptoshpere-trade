@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Button from "../shared/Button";
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 interface ProductCardProps {
 	title: string;
@@ -39,8 +40,9 @@ export default function ProductCard({ title, description, options, img }: Produc
 							</div>
 						);
 					})}
-
-					<Button btnText="Open Account" className="bg-green text-white px-12 mt-8" />
+					<Link href="https://universalcryptospheredashboard.vercel.app/auth/signup">
+						<Button btnText="Open Account" className="bg-green text-white px-12 mt-8" />
+					</Link>
 				</div>
 			</div>
 		</div>
