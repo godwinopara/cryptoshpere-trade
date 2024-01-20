@@ -7,7 +7,7 @@ import ShareHero from "@/components/share/ShareHero";
 import ShareProductRange from "@/components/share/ShareProductRange";
 import { useEffect } from "react";
 
-export default function page() {
+export default function Share() {
 	useEffect(() => {
 		const init = async () => {
 			const { Tab, initTE } = await import("tw-elements");
