@@ -176,21 +176,21 @@ export default function MobileNav() {
 									<li className="block rounded-lg p-2 text-sm">
 										<Link href="/product">Product overview</Link>
 									</li>
+									<li className="block rounded-lg p-2 text-sm">
+										<Link href="/forex">Forex CFDs</Link>
+									</li>
+									<li className="block rounded-lg p-2 text-sm">
+										<Link href="/share">Share CFDs</Link>
+									</li>
 									{/* <li className="block rounded-lg p-2 text-sm">
-								<Link href="/forex-cfd">Forex CFDs</Link>
-							</li>
-							<li className="block rounded-lg p-2 text-sm">
-								<Link href="/share-cfds-trading">Share CFDs</Link>
-							</li>
-							<li className="block rounded-lg p-2 text-sm">
-								<Link href="/index-trading-cfds">Index CFDs</Link>
-							</li>
-							<li className="block rounded-lg p-2 text-sm">
-								<Link href="/cfd-gold-silver">Metal CFDs</Link>
-							</li>
-							<li className="block rounded-lg p-2 text-sm">
-								<Link href="/commodity-cfd-trading">Commodity CFDs</Link>
-							</li> */}
+										<Link href="/index-trading-cfds">Index CFDs</Link>
+									</li> */}
+									<li className="block rounded-lg p-2 text-sm">
+										<Link href="/cfd-gold-silver">Metal CFDs</Link>
+									</li>
+									<li className="block rounded-lg p-2 text-sm">
+										<Link href="/commodity-cfd-trading">Commodity CFDs</Link>
+									</li>
 								</ul>
 								{/* ============== Platform =============== */}
 								<Link

@@ -19,8 +19,8 @@ export default function DesktopNav() {
 
 	const tradingSubLinks = [
 		{ link: "/product", text: "Product Overview" },
-		// { link: "/forex", text: "Forex CFDs" },
-		// { link: "/share", text: "Share CFDs" },
+		{ link: "/forex", text: "Forex CFDs" },
+		{ link: "/share", text: "Share CFDs" },
 		// { link: "/index", text: "Index CFDs" },
 		// { link: "/metal", text: "Metal CFDs" },
 		// { link: "/commodity", text: "Commodity CFDs" },
