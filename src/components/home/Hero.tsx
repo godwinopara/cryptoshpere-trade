@@ -62,7 +62,7 @@ export default function Hero() {
 							<div className="mb-20 lg:mb-0 xl:w-[55%]">
 								<div className="mb-10">
 									<h1 className="text-4xl  lg:text-90 lg:leading-120  mb-5">
-										Digital assets, investments and trding
+										Digital assets, investments and trading
 									</h1>
 									<p className="text-lg mb-4 xl:text-xl">
 										Join millions of users, from beginners to professionals, who use Universal
